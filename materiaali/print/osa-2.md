@@ -6,20 +6,21 @@
 * Fetch API
 * Tehtävä
 
-#### Arno Saine – [arno@mowhi.com](mailto:arno@mowhi.com) – 2017
+##### Arno Saine – [arno@mowhi.com](mailto:arno@mowhi.com) – 2017
 
-# Document Object Model
+# DOM
+## Document Object Model
 
-## Rajapinta HTML- ja XML-dokumenttien käsittelyyn
+### Rajapinta HTML- ja XML-dokumenttien käsittelyyn
 * Sivun muokkaus selaimessa ilman sivulatauksia
 * `document`
   * Globaali muuttuja, jossa metodit ovat
 * `document.body`
   * Sivun juurielementti
 
-# Muokkaus
+## Muokkaus
 
-## Elementin etsintä ja tyylin muokkaus
+### Elementin etsintä ja tyylin muokkaus
 ```js
 const h1 = document.querySelector('.exerslide-slide h1');
 if (h1) {
@@ -30,7 +31,7 @@ if (h1) {
 }
 ```
 
-## Uuden elementin lisäys dokumenttiin
+### Uuden elementin lisäys dokumenttiin
 ```js
 const strong = document.createElement('strong');
 const content = document.createTextNode('Jee!');
@@ -39,7 +40,7 @@ const parent = document.querySelectorAll('.exerslide-slide h2')[1];
 parent.appendChild(strong);
 ```
 
-## Elementtien poisto
+### Elementtien poisto
 ```js
 // Etsitään kaikki `exerslide-slide`-CSS-luokan sisällä olevat h2
 // -elementit.
@@ -59,7 +60,7 @@ function remove(element) {
   * NodeList  voidaan muuttaa taulukoksi ES2015 spread-syntaksilla:
     * `const h2Array = [...h2NodeList];`
 
-### Uusissa selaimissa elementillä itsellään on `remove`-metodi (vrt. edellä, jossa poisto oli parent-elementin metodi)
+#### Uusissa selaimissa elementillä itsellään on `remove`-metodi (vrt. edellä, jossa poisto oli parent-elementin metodi)
 ```js
 const h3 = document.querySelector('.exerslide-slide h3');
 if (h3) {
@@ -79,9 +80,9 @@ if (h3) {
 
 [childNode.remove MDN:ssä](https://developer.mozilla.org/en-US/docs/Web/API/ChildNode/remove)
 
-# Events
+## Events
 
-## Tapahtumakuuntelijan lisäys elementille:
+### Tapahtumakuuntelijan lisäys elementille:
 ```js
 const h1 = document.querySelector('.exerslide-slide h1');
 if (h1) {
@@ -115,7 +116,8 @@ function onClick(event) {
   * ~~`$.ajax(url)`~~ → `fetch(url)`
   * ~~`$.each(array)`~~ → `Array.prototype.forEach`, `Object.keys`
 
-# Lyhyesti
+# JSON
+## Lyhyesti
 
 * Tekstimuotosta dataa
 * Muunnettavissa helposti JavaScript-muuttujaksi ja päinvastoin
@@ -138,13 +140,13 @@ console.log(JSON.stringify(data, null, 2)); // =>
 // }
 ```
 
-# Esimerkkejä
+## Esimerkkejä
 
-## Hyviä ja huonoja laillisia JSON-merkkijonoja
+### Hyviä ja huonoja laillisia JSON-merkkijonoja
 * Toteuta omat rajapinnat hyvin ja vältä näitä virheitä
 * Älä kirjoita tai parsi JSON:ia käsin vaan käytä valmiita kirjastoja (JavaScriptissä globaali muuttuja `JSON`)
 
-### Väärin :confused:
+#### Väärin :confused:
 * Päätasolla on objekti, vaikka välitetään jokin yksittäinen tieto
 ```json
 {"pi":3.14159265359}
@@ -153,7 +155,7 @@ console.log(JSON.stringify(data, null, 2)); // =>
 {"labels":["a","b","c"]}
 ```
 
-### Oikein :sunglasses:
+#### Oikein :sunglasses:
 * Päätasolla voi olla muukin kuin objekti
 ```json
 3.14159265359
@@ -168,19 +170,19 @@ console.log(JSON.stringify(data, null, 2)); // =>
 null
 ```
 
-### Väärin :confused:
+#### Väärin :confused:
 * Boolean-arvo välitetään tekstinä
 ```json
 {"a":[4,5,6],"b":"true"}
 ```
 
-### Oikein :sunglasses:
+#### Oikein :sunglasses:
 * Boolean-arvo ilman lainausmerkkejä
 ```json
 {"a":[4,5,6],"b":true}
 ```
 
-### Väärin :confused:
+#### Väärin :confused:
 * Käytetään objektia, kun listataan asioita
 * Käytetään ID-arvona numero-tyyppiä
   * Vaikka ID olisikin numero, on String-tyyppi usein varmempi valita
@@ -197,7 +199,7 @@ null
 }
 ```
 
-### Oikein :sunglasses:
+#### Oikein :sunglasses:
 * Listoissa käytetään taulukoita
   * Taulukko on helpompi käydä läpi
   * Voidaan tarvittaessa muuntaa objektiksi vastaanottajan päässä
@@ -216,7 +218,7 @@ null
 ]
 ```
 
-### Väärin :confused:
+#### Väärin :confused:
 * Käytetään `null`-arvoa, jos tieto puuttuu
   * JavaScriptissä `null`-arvoa tulisi käyttää vain jos siihen on erityinen syy
     * `null` hankaloittaa [ES2015 oletusarvojen]((https://babeljs.io/learn-es2015/#ecmascript-2015-features-default-rest-spread)) käyttämistä
@@ -232,7 +234,7 @@ null
 }
 ```
 
-### Oikein :sunglasses:
+#### Oikein :sunglasses:
 * Puuttuvat tiedot jätetään asettamatta
 ```json
 {
@@ -252,7 +254,7 @@ null
 * Uusissa selaimissa
 * Saatavilla vanhoihin selaimiin [polyfillinä](https://github.com/github/fetch)
 
-## Esimerkki:
+### Esimerkki:
 ```js
 fetch('/persons.json')
   .then(function (response) {
@@ -263,7 +265,7 @@ fetch('/persons.json')
   });
 ```
 
-## Esimerkki ES201X async-funktiolla *:
+### Esimerkki ES201X async-funktiolla *:
 ```js
 async function listPersons() {
   const response = await fetch('/persons.json');
@@ -277,9 +279,9 @@ listPersons();
 
 *[Uusissa selaimissa, käännettävissä vanhoihin selaimiin](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/async_function)
 
-# Tehtävä
+# Tehtäviä
 
-## Tehtävä 1
+### Tehtävä 1
 1. Avaa jokin sivu jossa on mainoksia
    * Jos käytät Adblockia, poista se käytöstä
 1. Avaa selaimen konsoli (`F12`)
@@ -292,20 +294,20 @@ listPersons();
 1. Lisää koodi selaimen kirjanmerkkeihin [bookmarklet:ina](https://fi.wikipedia.org/wiki/Sovelluskirjanmerkki). Vinkki:
    * Jos käytit IIFE:tä, riittää kun lisäät koodin alkuun `javascript:` ja tallennat sen kirjanmerkin URL:ksi
 
-### Lisätehtävä
+#### Lisätehtävä
 1. Etsi sivu jolla `jQuery`-gobaali muuttuja on saatavilla
 1. Tee vastaavia muutoksia sivun sisältöön jQuerylla
 1. Toteuta jQueryn kaltainen oma funktio selaimen DOM-metodeilla, jotta jos edellisessä kohdassa käytit esimerkiksi `jQuery(selector).remove();`, voit käyttää `munKirjasto(selector).remove();`
 
-## Esimerkkiratkaisu
+#### Esimerkkiratkaisu
 ```js
 function myQuery(selector) {
   // Suoritetaan query, mutta ei tehdä tulosjoukolle vielä mitään.
   const nodeList = document.querySelectorAll(selector);
   // Palautetaan objekti.
   return {
-    // ES2015 tiiviimpi syntaksi määrittää objektille property, jonka
-    // arvo on funktio:
+    // Tiiviimpi ES2015-syntaksi, joka määrittää objektille propertyn,
+    // jonka arvo on funktio:
     remove() { // Funktio `remove` ei ota parametreja.
       // Poistetaan löydetyt elementit, mikäli `remove`:a kutsutaan.
       nodeList.forEach(element =>
@@ -313,7 +315,7 @@ function myQuery(selector) {
       );
     }
     // Sama kuin yllä:
-    // remove: function () {...}
+    // remove: function () { ... }
   };
 }
 
@@ -321,7 +323,7 @@ const elements = myQuery('.ad-div, .ad-container');
 elements.remove();
 ```
 
-## Tehtävä 2
+### Tehtävä 2
 1. Avaa [Katsomo.fi](https://www.katsomo.fi/):stä jonkin ohjelman sivu, esimerkiksi [Salatut Elämät](https://www.katsomo.fi/#!/jakso/33005005/)
 1. Tutki selaimen Developer Tools → Network -välilehdeltä, mitä pyyntöjä sivu tekee
    * Ohjelman jaksojen tiedot saadaan tällaisella kyselyllä [https://www.katsomo.fi/api/web/search/categories/33005005/assets.json?size=25&start=0](https://www.katsomo.fi/api/web/search/categories/33005005/assets.json?size=25&start=0)
@@ -334,12 +336,12 @@ elements.remove();
 1. Tee selaimen kirjanmerkki, joka suorittaa edellä mainitun listauksen, mikäli käyttäjä on Katsomo.fi:ssä jonkin ohjelman sivulla
    * Vinkki: sivun URL:ään pääsee käsiksi globaalin `location`-muuttujan kautta
 
-### Lisätehtäviä
+#### Lisätehtäviä
 * Tutustu seuraaviin artikkeleihin:
   * [Airbnb JavaScript Style Guide](https://github.com/airbnb/javascript)
   * [Learn ES2015](https://babeljs.io/learn-es2015/)
 
-## Esimerkkiratkaisu
+#### Esimerkkiratkaisu
 ```js
 async function listaaOhjelmat() {
   // Luetaan nykyisen sivun osoite. Erotetaan URL:n osat talukkoon.

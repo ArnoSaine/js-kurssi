@@ -9,6 +9,7 @@ const emojis = ['fireworks', 'sunglasses', 'confused'];
 const temp = 'temp';
 const target = 'print';
 const ignorePath = path => path.replace(/[\\\/]/g, '.');
+
 (async () => {
   await copy('slides', temp);
   await require('replace-in-file')({
@@ -17,10 +18,31 @@ const ignorePath = path => path.replace(/[\\\/]/g, '.');
       ...icons.map(icon =>
         RegExp(`<i class="fa fa-${icon}" aria-hidden="true"><\/i>`, 'g')
       ),
-      /^\s*---\s*.*\s*title:/m,
-      /---\s*/m
+      /^##### /gm,
+      /^#### /gm,
+      /^### /gm,
+      /^## /gm,
+      /\s*---\s*(title|chapter):\s*/,
+      /\s*---\s*\#chapter\s*/,
+      /title:\s*/,
+      /^---\s*/m
+      ///---\s*/m
     ],
-    to: [...emojis.map(emoji => `:${emoji}:`), '#', '\n']
+    to: [
+      ...emojis.map(emoji => `:${emoji}:`),
+      '###### ',
+      '##### ',
+      '#### ',
+      '### ',
+      '# ',
+      '',
+      '## ',
+      '\n'
+      //'',
+      //'#',
+      //'##'
+      //'\n'
+    ]
   });
   readdir(temp, async (error, paths) => {
     if (error) {

@@ -10,7 +10,7 @@
   * Sisäänrakennetut ominaisuudet
 * Tehtävä
 
-#### Arno Saine – [arno@mowhi.com](mailto:arno@mowhi.com) – 2017
+##### Arno Saine – [arno@mowhi.com](mailto:arno@mowhi.com) – 2017
 
 # Miksi JavaScript
 
@@ -24,33 +24,34 @@
 
 # JavaScriptin historiaa
 
-## 1995
+### 1995
 * Julkaistu (Netscape Navigator)
 * Self- ja Scheme-kielien kaltainen
 * Suunniteltu alunperinkin laajennettavaksi. Ominaisuuksia voi täydentää ja ylikirjoittaa. Ymmärrettiin, että selaimet toteuttavat asioita eri tavalla ja eri tahtia
 
-## ...
+### ...
 * IE ja muut kehittyivät eri tahtia ja osittain eri suuntiin (esimerkiksi ActiveX ja XMLHttpRequest)
 * Standardista oli erimielisyyksiä eikä se kehittynyt
 * Tuli tilaa apukirjastoille, joista erityisesti jQuery sai suurta suosiota
 
-## 2009
+### 2009
 * **ES5:** Pitkästä aikaa uusia tarpeellisia standardoituja ominaisuuksia
   * Selaintuki oli puutteellista vielä pitkään eteenpäin, kunnes IE9 julkaistiin 2011
   * Nykyään vanhempia selaimia ei käytännössä tarvitse tukea – ES5-ominaisuuksia voi käyttää kaikkialla
 
-## 2015
+### 2015
 * **ES2015:** Uusia hyödyllisiä ominaisuuksia syntaksiin ja globaaleihin. Koodi on käännettävissä yhteensopivaksi vanhoihin selaimiin [Babelilla](https://babeljs.io/).
 * Suunnitelma, miten kieleen tuodaan uusia ominaisuuksia. Selainvalmistajat ovat sitoutuneita
 
-## 2016
+### 2016
 * **ES2016:** Uusia ominaisuuksia
 
-## 2017
+### 2017
 * **ES2017:** Uusia ominaisuuksia
 * Babel-kääntäjään ympäristökohtainen käännösominaisuus ([Env preset](https://babeljs.io/docs/plugins/preset-env/)) - Käännetään vain toiminnot jota kohdeympäristö ei tue natiivisti - Selkeä polku, jolla uusia ominaisuuksia voidaan tuoda ja hyödyntää natiivisti niissä ympäristöissä jotka toimintoja tukevat
 
-# Tyypit
+# JavaScriptin perusteita
+## Tyypit
 
 * JavaScriptissä on muutamia perustyyppejä:
 * Tyyppi selviää `typeof`-operaattorilla
@@ -69,9 +70,9 @@ console.log(typeof num); // => 'number'
 | `'symbol'`    | `Symbol('foo')`                             |
 | `'function'`  | `function f() {}`                           |
 
-# Viittaukset ja kopiot
+## Viittaukset ja kopiot
 
-## Objektit (sekä taulukot) ja funktiot välitetään viittauksina
+### Objektit (sekä taulukot) ja funktiot välitetään viittauksina
 ```js
 // Funktio joka asettaa parametrina saadulle arvolle propertyn `moo`
 // arvolla 'MOO'.
@@ -92,7 +93,7 @@ a = 456; // Ylikirjoitetaan vanha arvo. b:n arvo pysyy ennallaan.
 console.log(b); // => 123
 ```
 
-# Yhtäsuuruusvertailut
+## Yhtäsuuruusvertailut
 
 * JavaScriptissä käytetään `===` ja `!==` -vertailuita
   * Eri tyypin (`typeof`) arvot (esimerkiksi `function` ja `string`) ovat aina erisuuret
@@ -110,7 +111,7 @@ console.log(b); // => 123
 
 [Vertailutavat MDN:ssä](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Equality_comparisons_and_sameness)
 
-# Truthy ja falsy
+## Truthy ja falsy
 
 * Kaikki arvot ovat booleaniksi muutettuna joko tosia tai epätosia
 * Arvo voidaan kääntää vastakkaiseksi `!`-operaattorilla: `if (!moo) {...}`
@@ -144,7 +145,7 @@ console.log(b); // => 123
 | `Infinity`   |
 | `-Infinity`  |
 
-# Loogiset operaattorit && ja ||
+## Loogiset operaattorit && ja ||
 
 * `&&`-operaattori ottaa kaksi arvoa
   * Jos *vasen* puoli on *falsy*, operaattori palauttaa *vasemman* puolen arvon **sellaisenaan**
@@ -176,7 +177,7 @@ console.log('Henkilön nimi on:', nimi || '(ei nimeä)');
 
 [Loogiset operaattorit MDN:ssä](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Logical_Operators)
 
-# Objektit ja prototyyppiketju
+## Objektit ja prototyyppiketju
 
 * Kaikki on objekteja
 * Objekteilla on propertyjä
@@ -191,7 +192,7 @@ console.log('Henkilön nimi on:', nimi || '(ei nimeä)');
 * Kirjoitus tehdään aina objektiin itseensä:
 `obj.x = 123;`
 
-# Näkyvyysalueet
+## Näkyvyysalueet
 
 * Lohko `{ ... koodia ... }`, kuten funktio tai `if`-lause luo näkyvyysalueen*
   * Myös moduulitiedoston sisällä on oma näkyvyysalue – moduulitiedoston päätasolla esitellyt muuttujat eivät ole globaaleja
@@ -215,10 +216,10 @@ console.log(x);  // => 1
 
 Lisätietoa [näkyvyysalueista](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Closures), [let](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/let)- ja [const](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/const)-muuttujista MDN:ssä.
 
-# Funktion määritys ja "nosto" (hoisting)
+## Funktion määritys ja "nosto" (hoisting)
 
-* `function f() {...}` -tavalla määritelty funktio nostetaan näkyvyysalueen alkuun ja on käytettävissä missä tahansa näkyvyysalueen sisällä
-* `const f = function () {};`-tavalla määritelty funktio on käytössä kyseisen rivin jälkeen, missä sijoitus tehdään
+* `function f() { ... }` -tavalla määritelty funktio nostetaan näkyvyysalueen alkuun ja on käytettävissä missä tahansa näkyvyysalueen sisällä
+* `const f = function () { ... };`-tavalla määritelty funktio on käytössä kyseisen rivin jälkeen, missä sijoitus tehdään
 
 ```js
 console.log(f()); // => 123
@@ -235,11 +236,11 @@ const g = function () {
 
 [Hoisting MDN:ssä](https://developer.mozilla.org/en-US/docs/Glossary/Hoisting)
 
-# This-arvo (1/3)
+## This-arvo (1/3)
 
-## Funktion sisällä on 2 erikoisarvoa `arguments` ja `this`
+### Funktion sisällä on 2 erikoisarvoa `arguments` ja `this`
 
-### `arguments`:
+#### `arguments`:
 * Taulukon kaltainen objekti, jossa on viittaukset funktion saamiin argumentteihin
 * ES2015 rest-toiminto (`...`-operaattori) tekee `arguments`:sta tarpeettoman
 ```js
@@ -251,24 +252,24 @@ function f(a, b, ...muut) {
 f(1, 2, 3, 'a', 'b');
 ```
 
-### `this`:
+#### `this`:
 * `null` tai viittaus johonkin objektiin
 * Riippuu funktion **määritys- ja/tai kutsutavasta** →
 
-# This-arvo (2/3)
+## This-arvo (2/3)
 
-## Propertynä kutsuttuna this-arvo on `.`-merkin vasemmanpuoleinen arvo:
+### Propertynä kutsuttuna this-arvo on `.`-merkin vasemmanpuoleinen arvo:
 ```js
 obj.f(); // f-funktion sisällä: this === obj
 ```
   * Ei ole merkitystä, miten funktio on liitetty objektiin tai tuleeko funktio objektin prototypestä
-## This-arvo kadotetaan, jos kutsua ei tehdä välittömästi:
+### This-arvo kadotetaan, jos kutsua ei tehdä välittömästi:
 ```js
 const f = obj.f;
 f(); // f-funktion sisällä: this === null
 ```
 
-## Voidaan luoda kokonaan uusi funktio ja hyödyntää näkyvyysalueita, jotta kutsu tehdään `.`-notaatiolla:
+### Voidaan luoda kokonaan uusi funktio ja hyödyntää näkyvyysalueita, jotta kutsu tehdään `.`-notaatiolla:
 ```js
 const g = function () {
   obj.f(); // f-funktion sisällä: this === obj
@@ -276,7 +277,7 @@ const g = function () {
 g();
 ```
 
-## Tavallisen funktion this-arvo voidaan lukita:
+### Tavallisen funktion this-arvo voidaan lukita:
 ```js
 const g = obj.f.bind(obj);
 g(); // f-funktion sisällä: this === obj
@@ -285,7 +286,7 @@ g(); // f-funktion sisällä: this === obj
 
 [ES2015 arrow-funktiot](https://babeljs.io/learn-es2015/#ecmascript-2015-features-arrows-and-lexical-this) helpottavat this-arvon käsittelyä.
 
-# This-arvo (3/3)
+## This-arvo (3/3)
 
 * Virtuaaliset metodit / funktioiden lainaus
 
@@ -297,9 +298,9 @@ g(); // f-funktion sisällä: this === obj
 
 Kaikki yllämainitut suorittavat funktion `h` argumenteilla `1`, `2`, `3`. Funktion sisällä `this === obj`.
 
-# Sisäänrakennetut ominaisuudet
+## Sisäänrakennetut ominaisuudet
 
-## JavaScriptistä löytyy joitain globaaleita muuttujia, jotka toimivat prototyyppinä perustyypeille. Esimerkiksi:
+### JavaScriptistä löytyy joitain globaaleita muuttujia, jotka toimivat prototyyppinä perustyypeille. Esimerkiksi:
 * **String** saa protyypikseen `String.prototype`-objektin
   * `const myString = 'moo';`
 * **Taulukko** saa protyypikseen `Array.prototype`-objektin
@@ -307,7 +308,7 @@ Kaikki yllämainitut suorittavat funktion `h` argumenteilla `1`, `2`, `3`. Funkt
 * **Objekti** saa protyypikseen `Object.prototype`-objektin
   * `const MyObject = { a: 1, b: 2 };`
 
-## Prototyypissä olevat funktiot tulevat instanssille käyttöön
+### Prototyypissä olevat funktiot tulevat instanssille käyttöön
 
 `console.log('moo'.toUpperCase()); // => 'MOO'`
 1. Luodaan uusi string-arvo (`'moo'`)
@@ -319,9 +320,9 @@ Kaikki yllämainitut suorittavat funktion `h` argumenteilla `1`, `2`, `3`. Funkt
     * Koska funktiota kutsutaan `.`-notaatiolla, funktion sisällä this-arvo viittaa `.`-merkin vasemmanpuoleiseen arvoon, eli arvoon `'moo'`
 1. Funktio palauttaa tekstin isoin kirjaimin, joka tulostetaan
 
-# Esimerkkejä sisäänrakennetuista ominaisuuksista
+## Esimerkkejä sisäänrakennetuista ominaisuuksista
 
-## Prototyyppifunktioita
+### Prototyyppifunktioita
 | Funktio  | Lyhyesti | Esimerkki |
 | - | - | - |
 | `String.prototype.indexOf` | Palauttaa indeksin josta merkkijono löytyy, tai -1 | `'moo'.indexOf('oo'); // 1` |
@@ -334,7 +335,7 @@ Kaikki yllämainitut suorittavat funktion `h` argumenteilla `1`, `2`, `3`. Funkt
 | `Array.prototype.map` | Palauttaa uuden taulukon, jossa jokaisella alkuperäisen taulukon entryllä kutsutaan funktiota ja funktiokutsujen tulokset asetetaan uuden taulukon arvoiksi | `[1, 2, 3].map(x => 2 * x); // [2, 4, 6]` |
 | `Array.prototype.join` | Liittää taulukon tekstiksi käyttäen mahdollista erotinmerkkijonoa | `[1, 2, 3].join('-'); // '1-2-3'` |
 
-## Staattisia funktioita
+### Staattisia funktioita
 | Funktio  | Lyhyesti | Esimerkki |
 | - | - | - |
 | `Object.keys` | Palauttaa objektin omien propertyjen nimet taulukkona | `Object.keys({ a: 1, b: 2 }); // ['a', 'b']` |
@@ -348,13 +349,13 @@ Usein `Object.keys`, `values` ja `entries` ovat hyödyllisiä yhdistettynä `Arr
 
 # Linkkejä
 
-## [Airbnb JavaScript Style Guide](https://github.com/airbnb/javascript)
+### [Airbnb JavaScript Style Guide](https://github.com/airbnb/javascript)
 * Hyvät koodauskäytännöt jotka opettavat myös teoriaa
-## [Crockford on JavaScript – Volume 1...Section 8](https://www.youtube.com/playlist?list=PLEzQf147-uEpvTa1bHDNlxUL2klHUMHJu)
+### [Crockford on JavaScript – Volume 1...Section 8](https://www.youtube.com/playlist?list=PLEzQf147-uEpvTa1bHDNlxUL2klHUMHJu)
 * Erinomainen videosarja JavaScriptistä ja hieman ohjelmoinnista yleisestikin
 * Pieniltä osin vanhentunut
   * Uuden syntaksin nuolifunktiot ja luokat helpottavat this-arvon käsittelyä ja luokkien käyttöä
-## [MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+### [MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 * Mozilla Developer Network – JavaScript
 
 # Tehtävä
@@ -365,7 +366,7 @@ Usein `Object.keys`, `values` ja `entries` ovat hyödyllisiä yhdistettynä `Arr
    * Pyri funktionaaliseen ratkaisuun
      * Vältä `while`- ja `for`-rakenteita ja `let`- ja `var`-muuttujia
 
-## Lisätehtävä
+### Lisätehtävä
 1. Siirtofunktio toiseen suuntaan, jolla "salakirjoituksen" voi purkaa
 1. Yhteisen toiminnallisuuden erotus omiin funktioihin
 1. Numeroiden käsittely: `1` → `2`, `2` → `3`, ...`0` → `1`
@@ -373,7 +374,7 @@ Usein `Object.keys`, `values` ja `entries` ovat hyödyllisiä yhdistettynä `Arr
 1. Erikoismerkkien käsittely
    * Erikoismerkit palautetaan sellaisenaan
 
-## Esimerkkiratkaisu
+### Esimerkkiratkaisu
 ```js
 const rows = ['qwertyuiopå', 'asdfghjklöä', 'zxcvbnm'];
 const charLists = [
