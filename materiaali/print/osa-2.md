@@ -146,7 +146,7 @@ console.log(JSON.stringify(data, null, 2)); // =>
 * Toteuta omat rajapinnat hyvin ja vältä näitä virheitä
 * Älä kirjoita tai parsi JSON:ia käsin vaan käytä valmiita kirjastoja (JavaScriptissä globaali muuttuja `JSON`)
 
-#### Väärin :confused:
+#### Väärin :thumbsdown:
 * Päätasolla on objekti, vaikka välitetään jokin yksittäinen tieto
 ```json
 {"pi":3.14159265359}
@@ -155,7 +155,7 @@ console.log(JSON.stringify(data, null, 2)); // =>
 {"labels":["a","b","c"]}
 ```
 
-#### Oikein :sunglasses:
+#### Oikein :thumbsup:
 * Päätasolla voi olla muukin kuin objekti
 ```json
 3.14159265359
@@ -172,13 +172,13 @@ null
 
 ---
 
-#### Väärin :confused:
+#### Väärin :thumbsdown:
 * Boolean-arvo välitetään tekstinä
 ```json
 {"a":[4,5,6],"b":"true"}
 ```
 
-#### Oikein :sunglasses:
+#### Oikein :thumbsup:
 * Boolean-arvo ilman lainausmerkkejä
 ```json
 {"a":[4,5,6],"b":true}
@@ -186,7 +186,7 @@ null
 
 ---
 
-#### Väärin :confused:
+#### Väärin :thumbsdown:
 * Käytetään objektia, kun listataan asioita
 * Käytetään ID-arvona numero-tyyppiä
   * Vaikka ID olisikin numero, on String-tyyppi usein varmempi valita
@@ -203,7 +203,7 @@ null
 }
 ```
 
-#### Oikein :sunglasses:
+#### Oikein :thumbsup:
 * Listoissa käytetään taulukoita
   * Taulukko on helpompi käydä läpi
   * Voidaan tarvittaessa muuntaa objektiksi vastaanottajan päässä
@@ -224,7 +224,7 @@ null
 
 ---
 
-#### Väärin :confused:
+#### Väärin :thumbsdown:
 * Käytetään `null`-arvoa, jos tieto puuttuu
   * JavaScriptissä `null`-arvoa tulisi käyttää vain jos siihen on erityinen syy
     * `null` hankaloittaa [ES2015 oletusarvojen]((https://babeljs.io/learn-es2015/#ecmascript-2015-features-default-rest-spread)) käyttämistä
@@ -240,7 +240,7 @@ null
 }
 ```
 
-#### Oikein :sunglasses:
+#### Oikein :thumbsup:
 * Puuttuvat tiedot jätetään asettamatta
 ```json
 {
@@ -251,7 +251,7 @@ null
 
 ---
 
-#### Väärin :confused:
+#### Väärin :thumbsdown:
 * Käytetään tarpeettoman tarkkoja property-nimiä
 
 ```json
@@ -261,7 +261,7 @@ null
 }
 ```
 
-#### Oikein :sunglasses:
+#### Oikein :thumbsup:
 * Propertyjen nimissä ei ole ylimääräisiä termejä
   * Asiayhteydestä selviää, mistä objektista ja propertyistä on kyse (hyvä ohje myös muuttujien nimeämiseen koodissa)
 ```json

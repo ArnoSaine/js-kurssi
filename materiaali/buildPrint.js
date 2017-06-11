@@ -4,11 +4,17 @@ const recursive = require('recursive-readdir');
 const { readdir } = require('fs');
 const concat = require('concat');
 
-const icons = ['flask', 'smile-o', 'frown-o', 'meh-o', 'check-square-o'];
+const icons = [
+  'flask',
+  'thumbs-o-up',
+  'thumbs-o-down',
+  'meh-o',
+  'check-square-o'
+];
 const emojis = [
   'fireworks',
-  'sunglasses',
-  'confused',
+  'thumbsup',
+  'thumbsdown',
   'neutral_face',
   'ballot_box_with_check'
 ];

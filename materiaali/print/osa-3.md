@@ -250,6 +250,7 @@ const henkilöKopio = { a: 1, b: 2, ...henkilö, nimi: '(tuntematon)' };
 * Kääntää uuden syntaksin JavaScript-koodin vanhemmilla selaimilla yhteensopivaan muotoon
   * Syntaksiin liittyviä ominaisuuksia ei ole mahdollista polyfillata, vaan koodi on käännettävä
 * Syntaksivirheet tulevat esiin käännösaikana
+  * [Flow](https://flow.org/) ja [TypeScript](https://www.typescriptlang.org/) tuovat vielä parempia kirjoitus- ja käännösaikaisia apuja JavaScript-ohjelmoitiin
 
 # Linkkejä
 
