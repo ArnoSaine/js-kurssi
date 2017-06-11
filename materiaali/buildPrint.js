@@ -4,8 +4,14 @@ const recursive = require('recursive-readdir');
 const { readdir } = require('fs');
 const concat = require('concat');
 
-const icons = ['flask', 'smile-o', 'frown-o'];
-const emojis = ['fireworks', 'sunglasses', 'confused'];
+const icons = ['flask', 'smile-o', 'frown-o', 'meh-o', 'check-square-o'];
+const emojis = [
+  'fireworks',
+  'sunglasses',
+  'confused',
+  'neutral_face',
+  'ballot_box_with_check'
+];
 const temp = 'temp';
 const target = 'print';
 const ignorePath = path => path.replace(/[\\\/]/g, '.');

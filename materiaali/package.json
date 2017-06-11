@@ -6,7 +6,9 @@
   "scripts": {
     "prebuild:print": "rimraf ../print && rimraf ./temp",
     "build:print": "node buildPrint",
-    "build:slides": "node buildSlides"
+    "build:slides": "node buildSlides",
+    "build": "npm run build:print && npm run build:slides",
+    "start": "exerslide serve"
   },
   "dependencies": {
     "codemirror": "^5.7.0",

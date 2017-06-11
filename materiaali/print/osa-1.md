@@ -58,7 +58,7 @@
   * `typeof`-operaattori palauttaa `string`-arvon
 ```js
 const num = 123;
-console.log(typeof num); // => 'number'
+console.log(typeof num); // => "number"
 ```
 | `typeof x`    | Esimerkki                                   |
 | ------------- | ------------------------------------------- |
@@ -81,7 +81,7 @@ function setMoo(obj) {
 }
 const o = {}; // Luodaan (tyhjä) objekti.
 setMoo(o);
-console.log(o.moo); // => 'MOO'
+console.log(o.moo); // => "MOO"
 ```
 
 * Muut tyypit välitetään kopiona
@@ -310,7 +310,10 @@ Kaikki yllämainitut suorittavat funktion `h` argumenteilla `1`, `2`, `3`. Funkt
 
 ### Prototyypissä olevat funktiot tulevat instanssille käyttöön
 
-`console.log('moo'.toUpperCase()); // => 'MOO'`
+```js
+console.log('moo'.toUpperCase()); // => "MOO"
+```
+
 1. Luodaan uusi string-arvo (`'moo'`)
 1. Etsitään property (`.toUpperCase`)
 1. Arvolla ei ole sennimistä propertyä
@@ -405,6 +408,6 @@ const shiftLeft = transform((index, chars) => {
     : chars[i];
 });
 
-console.log(shiftRight('Moi! testiä 123')); // => 'Zpo! yrdyoa 234'
-console.log(shiftLeft('Zpo! yrdyoa 234')); // => 'Moi! testiä 123'
+console.log(shiftRight('Moi! testiä 123')); // => "Zpo! yrdyoa 234"
+console.log(shiftLeft('Zpo! yrdyoa 234')); // => "Moi! testiä 123"
 ```

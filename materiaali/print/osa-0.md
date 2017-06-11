@@ -7,6 +7,8 @@
 
 :fireworks:-merkillä korostetaan kohdat jotka mahdollisesti muuttuvat/vanhenevat ensimmäisenä.
 
+##### Arno Saine – [arno@mowhi.com](mailto:arno@mowhi.com) – 2017
+
 # Mihin kannattaa panostaa
 
 * JavaScriptin ymmärtämiseen

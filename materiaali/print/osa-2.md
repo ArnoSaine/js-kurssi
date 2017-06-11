@@ -27,7 +27,7 @@ if (h1) {
   // style-objektissa on elementin inline-tyylit.
   h1.style.backgroundColor = 'lime';
   // JavaScriptillä asetetut arvot voi myös lukea.
-  console.log(h1.style.backgroundColor); // => 'lime'
+  console.log(h1.style.backgroundColor); // => "lime"
 }
 ```
 
@@ -170,6 +170,8 @@ console.log(JSON.stringify(data, null, 2)); // =>
 null
 ```
 
+---
+
 #### Väärin :confused:
 * Boolean-arvo välitetään tekstinä
 ```json
@@ -181,6 +183,8 @@ null
 ```json
 {"a":[4,5,6],"b":true}
 ```
+
+---
 
 #### Väärin :confused:
 * Käytetään objektia, kun listataan asioita
@@ -218,6 +222,8 @@ null
 ]
 ```
 
+---
+
 #### Väärin :confused:
 * Käytetään `null`-arvoa, jos tieto puuttuu
   * JavaScriptissä `null`-arvoa tulisi käyttää vain jos siihen on erityinen syy
@@ -239,6 +245,28 @@ null
 ```json
 {
   "_id": "0000",
+  "name": "Alice"
+}
+```
+
+---
+
+#### Väärin :confused:
+* Käytetään tarpeettoman tarkkoja property-nimiä
+
+```json
+{
+  "personAge": 28,
+  "personName": "Alice"
+}
+```
+
+#### Oikein :sunglasses:
+* Propertyjen nimissä ei ole ylimääräisiä termejä
+  * Asiayhteydestä selviää, mistä objektista ja propertyistä on kyse (hyvä ohje myös muuttujien nimeämiseen koodissa)
+```json
+{
+  "age": 28,
   "name": "Alice"
 }
 ```
@@ -265,7 +293,7 @@ fetch('/persons.json')
   });
 ```
 
-### Esimerkki ES201X async-funktiolla *:
+### Esimerkki ES2017 async-funktiolla *:
 ```js
 async function listPersons() {
   const response = await fetch('/persons.json');
@@ -326,12 +354,12 @@ elements.remove();
 ### Tehtävä 2
 1. Avaa [Katsomo.fi](https://www.katsomo.fi/):stä jonkin ohjelman sivu, esimerkiksi [Salatut Elämät](https://www.katsomo.fi/#!/jakso/33005005/)
 1. Tutki selaimen Developer Tools → Network -välilehdeltä, mitä pyyntöjä sivu tekee
-   * Ohjelman jaksojen tiedot saadaan tällaisella kyselyllä [https://www.katsomo.fi/api/web/search/categories/33005005/assets.json?size=25&start=0](https://www.katsomo.fi/api/web/search/categories/33005005/assets.json?size=25&start=0)
+   * Ohjelman jaksojen tiedot saadaan tällaisella kyselyllä: `https://www.katsomo.fi/api/web/search/categories/33005005/assets.json?size=25&start=0`
      * Jossa ohjelman ID (sama kuin osoiterivillä) on polussa, query-parametreilla asetetaan haluttujen tulosten enimmäismäärä
      1. Kokeile muuttaa kyselyn parametreja
 1. Suorita selaimen konsolissa fetch-pyyntö, joka lataa ohjelmatiedot
    * Sinun tulee olla samassa osoittessa (`https://katsomo.fi`), johon pyyntö tehdään
-1. Poista sivulta kaikki muu sisältö ja listaa haetut ohjelmatiedot
+1. Selaimen DOM-operaatioita käyttäen, poista sivulta kaikki muu sisältö ja listaa haetut ohjelmatiedot
 1. Näytä listassa linkit, josta ohjelman katselu alkaa
 1. Tee selaimen kirjanmerkki, joka suorittaa edellä mainitun listauksen, mikäli käyttäjä on Katsomo.fi:ssä jonkin ohjelman sivulla
    * Vinkki: sivun URL:ään pääsee käsiksi globaalin `location`-muuttujan kautta
