@@ -9,14 +9,16 @@ const icons = [
   'thumbs-o-up',
   'thumbs-o-down',
   'meh-o',
-  'check-square-o'
+  'check-square-o',
+  'smile-o'
 ];
 const emojis = [
   'fireworks',
   'thumbsup',
   'thumbsdown',
   'neutral_face',
-  'ballot_box_with_check'
+  'ballot_box_with_check',
+  'smile'
 ];
 const temp = 'temp';
 const target = 'print';

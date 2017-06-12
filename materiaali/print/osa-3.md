@@ -200,7 +200,7 @@ const { id, nimi = '(tuntematon)' } = henkilö;
 const [eka, toka, ...loput] = lista;
 
 // Sama vanhalla syntaksilla:
-const id = person.id;
+const id = henkilö.id;
 const nimi = henkilö.nimi === undefined ? '(tuntematon)' : henkilö.nimi;
 const eka = lista[0];
 const toka = lista[1];
@@ -541,7 +541,7 @@ const henkilöKopio = { a: 1, b: 2, ...henkilö, nimi: '(tuntematon)' };
     ```
 
     `.gitignore`:
-    ```txt
+    ```
     /node_modules/
     /lib/
     ```
