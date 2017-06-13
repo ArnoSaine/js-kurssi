@@ -52,14 +52,13 @@ console.log(moo(), dii); // => "moo", 123
 ```
 
 ### Polut
-* `.`-alkuisena polku on suhteellinen tiedoston sijaintiin, jossa `import` tehdään
+* `.`-alkuisena polku on suhteellinen tiedostoon, jossa `import` tehdään
 * Muissa tapauksissa pakettia haetaan ylemmistä `node_modules`-kansioista (lähimmästä ensin) kunnes paketti löytyy tai ollaan käyttöjärjestelmän juurihakemistossa
   * `package.json`-tiedoston mukaan määräytyy, mikä tiedosto paketista jaetaan (oletuksena `index.js`)
   * Paketista voidaan voidaan hakea myös tiedosto polun mukaan
     ```js
     import moo from 'some-lib/dist/js/moo';
     ```
-
 
 ##### Huomioitavaa <i class="fa fa-exclamation" aria-hidden="true"></i>
 * Node.js -sovelluksissa tulee käyttää toistaiseksi CommonJS-moduulisyntaksia, mikäli tiedostoja ei käännetä
@@ -195,7 +194,7 @@ Alle 1.0 versioita pidetään epävirallisina ja ovat ilman patch-versiota (0.ma
     ```
     npm install --save-dev webpack babel-loader babel-polyfill cross-env extract-text-webpack-plugin webpack-livereload-plugin css-loader file-loader style-loader url-loader
     ```
-1. Lisää `webpack.config.js`
+1. Lisää `webpack.config.js`:
     ```js
     const join = require('path').join;
     const ExtractTextPlugin = require('extract-text-webpack-plugin');
@@ -276,6 +275,22 @@ Alle 1.0 versioita pidetään epävirallisina ja ovat ilman patch-versiota (0.ma
     }
     ```
 
+1. Vaihda `index.html`-tiedostossa JS-koodin sijainti URL uuteen `bundle.js`-tiedostoon ja lisää `head`:iin `bundle.css`-tiedoston lataus
+    ```html
+    <link href="/build/bundle.css" rel="stylesheet">
+    <!-- -->
+    <script type="text/javascript" src="/build/bundle.js"></script>
+    ```
+
+1. Tee `src/client/index.js`-tiedostossa `app`-muuttujasta globaali, jotta html-koodin `onclick`:eissä voidaan viitata siihen
+    ```js
+    // Moduulitiedoston sisällä muuttujat eivät ole globaaleja. Asetetaan
+    // globaali `app`-muuttuja, jotta html-koodista voidaan kutsua sen
+    // metodeja.
+    window.app = new App(document.getElementById('root'));
+    // const app = new App(document.getElementById('root'));
+    ```
+
 1. Käynnistä palvelin (`npm start`) ja sovelluksen kehitys (`npm run dev`)
 1. Asenna [Boostrap-CSS-kirjasto](https://www.npmjs.com/package/bootstrap) npm:stä kuten aiemmatkin paketit
 1. Ota `src/client/index.js`-tiedostossa Bootsrapin tyylitiedosto mukaan sovellukseen
@@ -291,7 +306,7 @@ Alle 1.0 versioita pidetään epävirallisina ja ovat ilman patch-versiota (0.ma
 
 1. Jaottele pelin koodeja omiin moduuleihin, jottei kaikki ole yhdessä pitkässä tiedostossa. Esimerkiksi:
 
-    `src/client/card.js`
+    `src/client/card.js`:
     ```js
     export default ({ name, version, ...statistics }) => `
       <h3>${name}@${version}</h3>
@@ -303,7 +318,7 @@ Alle 1.0 versioita pidetään epävirallisina ja ovat ilman patch-versiota (0.ma
     `;
     ```
 
-    `src/client/index.js`
+    `src/client/index.js`:
     ```js
     import card from './card';
     /* ... */
