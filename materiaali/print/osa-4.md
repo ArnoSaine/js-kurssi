@@ -60,8 +60,8 @@ console.log(moo(), dii); // => "moo", 123
     import moo from 'some-lib/dist/js/moo';
     ```
 
-##### Huomioitavaa <i class="fa fa-exclamation" aria-hidden="true"></i>
-* Node.js -sovelluksissa tulee käyttää toistaiseksi CommonJS-moduulisyntaksia, mikäli tiedostoja ei käännetä
+##### Huomioita :grey_exclamation:
+* Node.js -sovelluksissa tulee toistaiseksi käyttää CommonJS-moduulisyntaksia, mikäli tiedostoja ei käännetä
   * Esimerkiksi `webpack.config.js`-tiedosto on tällainen
 ```js
 // Import
@@ -98,7 +98,7 @@ module.export = {
 
 ### `npm install` – Riippuvuuksien asennus
 * Ilman parametreja komento asentaa `package.json`:iin listatut `dependencies`- ja `devDependencies`-riippuvuudet `node_modules`-kansioon
-##### Huomioitavaa <i class="fa fa-exclamation" aria-hidden="true"></i>
+##### Huomioita :grey_exclamation:
 * Komento ei päivitä riippuvuutta, jos se on jo asennettu
 * Suorita `npm update`, jos `package.json`-tiedoston riippuvuuksia on muutettu
   * Komento asentaa puuttuvat riippuvuudet ja päivittää paketit oikeisiin versioihin, jos versioita on muutettu
@@ -110,7 +110,7 @@ module.export = {
 * Asentaa komentoon listatut paketit `node_modules`-kansioon
 * `--save`-optio lisää arvon `package.json`:n `dependencies`-listaan
 
-##### Huomioitavaa <i class="fa fa-exclamation" aria-hidden="true"></i>
+##### Huomioita :grey_exclamation:
 * Jos et käytä `--save-dev` / `--save`-optiota, muista muokata `package.json`:ia käsin, jotta riippuvuus asentuu muillekin kehittäjille
 
 ### `dependencies` vai `devDependencies`?
@@ -282,10 +282,10 @@ Alle 1.0 versioita pidetään epävirallisina ja ovat ilman patch-versiota (0.ma
     <script type="text/javascript" src="/build/bundle.js"></script>
     ```
 
-1. Tee `src/client/index.js`-tiedostossa `app`-muuttujasta globaali, jotta html-koodin `onclick`:eissä voidaan viitata siihen
+1. Tee `src/client/index.js`-tiedostossa `app`-muuttujasta globaali, jotta HTML-koodin `onclick`:eissä voidaan viitata siihen
     ```js
     // Moduulitiedoston sisällä muuttujat eivät ole globaaleja. Asetetaan
-    // globaali `app`-muuttuja, jotta html-koodista voidaan kutsua sen
+    // globaali `app`-muuttuja, jotta HTML-koodista voidaan kutsua sen
     // metodeja.
     window.app = new App(document.getElementById('root'));
     // const app = new App(document.getElementById('root'));

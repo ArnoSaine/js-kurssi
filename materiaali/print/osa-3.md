@@ -34,7 +34,7 @@ if (!String.prototype.includes) {
 }
 ```
 
-# Hyödyt, haitat ja muuta huomioitavaa
+# Hyödyt, haitat ja muita huomioita
 
 ### Polyfillaus standardin mukaiseksi on hyvä lähtökohta JavaScript-sovellukselle
 * Voidaan käyttää kirjastoja, jotka olettavat tiettyjen ominaisuuksien löytyvän selaimesta (ja Stack Overflowsta kopioitu koodi toimii varmemmin :neutral_face:)
@@ -48,7 +48,7 @@ if (!String.prototype.includes) {
 * Ladattava koodimäärä kasvaa hieman
 * Sovelluksen käynnistysaika kasvaa hieman
 
-### Huomioitavaa
+### Huomioita
 * Polyfillit paikkaavat vain kielen toimintoja eivätkä esimerkiksi DOM-metodeja
   * Normaalisti tämä ei ole ongelma, koska DOM:ia ei muokata suoraan, vaan esimerkiksi React-kirjaston toimesta
 
@@ -64,7 +64,7 @@ if (!String.prototype.includes) {
 # Omia havaintoja selainyhteensopivuudesta
 
 * IE noudattaa joitain HTML-määrityksiä, eri tavalla kuin muut selaimet
-  * Angular-projektin custom-attribuuttien nimissä ei pidä käyttää html:ssä varattuja sanoja, kuten `disabled` tai `for`
+  * Angular-projektin custom-attribuuttien nimissä ei pidä käyttää HTML:ssä varattuja sanoja, kuten `disabled` tai `for`
 ```html
 <!-- Toimii IE:ssä epätoivotusti. Kaikki `my-component`:n sisällä olevat
 inputit ym. ovat disabloitu, riippumatta funktiokutsun tuloksesta: -->
@@ -572,7 +572,7 @@ const henkilöKopio = { a: 1, b: 2, ...henkilö, nimi: '(tuntematon)' };
     1. Hae palvelimelta `/api/top-packages.json`-tiedosto
     1. Toteuta sivulle "Top Trumps" -peli
       * Muokkaa `App`-luokkaa
-      * Lisää `button` ja `h1` kaltaisia apufunktioita, jotka palauttavat html:ää
+      * Lisää `button` ja `h1` kaltaisia apufunktioita, jotka palauttavat HTML:ää
 
 ### Pelin säännöt
  * Kortit (tiedostossa oleva taulukko) sekoitetaan ja jaetaan 2 pakkaan

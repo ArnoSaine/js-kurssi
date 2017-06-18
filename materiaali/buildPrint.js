@@ -10,7 +10,8 @@ const icons = [
   'thumbs-o-down',
   'meh-o',
   'check-square-o',
-  'smile-o'
+  'smile-o',
+  'exclamation'
 ];
 const emojis = [
   'fireworks',
@@ -18,7 +19,8 @@ const emojis = [
   'thumbsdown',
   'neutral_face',
   'ballot_box_with_check',
-  'smile'
+  'smile',
+  'grey_exclamation'
 ];
 const temp = 'temp';
 const target = 'print';
