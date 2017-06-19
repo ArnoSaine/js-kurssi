@@ -12,7 +12,7 @@ const icons = [
   'check-square-o',
   'smile-o',
   'exclamation',
-  'peace-o'
+  'hand-peace-o'
 ];
 const emojis = [
   'fireworks',

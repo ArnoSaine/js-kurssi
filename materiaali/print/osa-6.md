@@ -257,7 +257,7 @@ app.greeting = Hello, {name}!
 ### [Awesome React](https://github.com/enaqx/awesome-react)
 * Iso kokoelma linkkejä ryhmiteltynä aihepiireittäin
 ### [frontend-app](https://www.npmjs.com/package/frontend-app)
-* React-aloituspaketti (oma <i class="fa fa-hand-peace-o" aria-hidden="true"></i>)
+* React-aloituspaketti (oma :v:)
 * [React-complete -esimerkissä](https://www.npmjs.com/package/frontend-app#react-complete) on mukana **React Router**, **React-Bootstrap** ja tyylien kustomointi sekä **React Intl**
 
 # Tehtävä
