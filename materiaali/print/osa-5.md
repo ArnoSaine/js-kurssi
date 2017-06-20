@@ -234,7 +234,7 @@ const Tarvikkeet = ({ tarvikkeet }) => (
     npm install --save-dev react-dates moment react-addons-shallow-compare
     ```
 1. Käytä `<SingleDatePicker />`:iä
-1. Aseta suomalainen päivämääräformaatti `displayFormat`-propetyllä
+1. Aseta suomalainen päivämääräformaatti `displayFormat`-propilla
     * Formaatti käyttää [Moment-kirjaston päivämääräformaattia](https://momentjs.com/docs/#/displaying/format/)
 1. Voit käyttää Datepickerin `isDayBlocked` -callback-funktiota päivämäärien rajaukseen
     * Funktio saa parametrina [Moment-kirjaston](https://momentjs.com/docs/) päivämääräobjektin
@@ -246,9 +246,11 @@ const Tarvikkeet = ({ tarvikkeet }) => (
       const b = a.date();
       if (31 === b) return moment({ date: 31, month: 11 });
       const c = a.month(), d = c + 20;
-      if (d > b) return moment({ date: d, month: c });
-      const e = moment({ date: b, month: c + 1 });
-      return e.isValid() ? e : moment({ date: b, month: c + 2 });
+      if (d < b) {
+        const e = b - 20, f = moment({ date: b, month: e });
+        return f.isValid() ? f : moment({ date: b, month: e + 1 });
+      }
+      return moment(d === b ? { date: b, month: c + 1 } : { date: d, month: c });
     }
     ```
 1. Listaa jo valitut päivämäärät
