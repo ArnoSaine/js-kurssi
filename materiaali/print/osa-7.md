@@ -68,6 +68,46 @@ foreach ($arr as $row) {
 * DOM:n muokkaus kirjaston avulla
   * Näkymän päivitykseen riittää että dataa muutetaan
 
+# CouchDB
+
+### Data tallennetaan JSON-dokumentteina
+```json
+{
+  "_id": "407804",
+  "_rev": "1-5f14bab1a1e9ac3ebdf85905f47fb084",
+  "year": 2000,
+  "title": "Where the Heart Is"
+}
+```
+
+### Datan etsintä [JSON-query syntaksin](http://docs.couchdb.org/en/latest/api/database/find.html) avulla ja tietokantaan tallennetuista [näkymistä](http://docs.couchdb.org/en/latest/api/ddoc/views.html)
+```json
+{
+  "selector": {
+    "year": {"$gt": 2010}
+  },
+  "fields": ["_id", "_rev", "year", "title"],
+  "sort": [{"year": "asc"}],
+  "limit": 2,
+  "skip": 0
+}
+```
+
+```js
+function(doc) {
+  if (doc.date && doc.title) {
+    emit(doc.date, doc.title);
+  }
+}
+```
+
+### Jokainen muutos versioidaan
+* Hajautetun sovelluksen (kuten mikä tahansa *single-page application*) teko on helpompaa
+
+### Dokumenttien muutoksia voidaan kuunnella
+
+[CouchDB – The Definitive Guide](http://guide.couchdb.org/editions/1/en/index.html)
+
 # Reaaliaikasovellus Reactilla ja CouchDB:llä
 ## Esimerkkitapaus
 
@@ -344,7 +384,7 @@ foreach ($arr as $row) {
 
 # Tehtävä
 
-1. `componentWillMount`-metodissa hae nykyiset ilmoitukset [tietokannasta](http://docs.couchdb.org/en/2.0.0/api/database/bulk-api.html#db-all-docs)
+1. `componentWillMount`-metodissa hae nykyiset ilmoitukset [tietokannasta](http://docs.couchdb.org/en/latest/api/database/bulk-api.html#db-all-docs)
     * (Palvelin ohjaa pyynnöt tietokannalle, joten osoite on muotoa `/jotain?abc=123`)
     * Sisällytä dokumentit vastaukseen `include_docs`-parametrilla
     * Aseta dokumentit `state`:en, jotta ne näkyvät ruudulla
@@ -358,7 +398,7 @@ foreach ($arr as $row) {
       //socket.on('change', doc => {...
     ```
 1. Lisää ilmoitukselle [poista-ruksi](https://react-bootstrap.github.io/components.html#alerts-closeable)
-    * Ruksia painettaessa tehdään `fetch`-pyyntö tietokantaan, jolla [poistetaan](http://docs.couchdb.org/en/2.0.0/api/document/common.html#delete--db-docid) kyseinen ilmoitus tietokannasta
+    * Ruksia painettaessa tehdään `fetch`-pyyntö tietokantaan, jolla [poistetaan](http://docs.couchdb.org/en/latest/api/document/common.html#delete--db-docid) kyseinen ilmoitus tietokannasta
 1. Ilmoitusten järjestäminen
     1. Lisää uudelle ilmoitukselle aikaleima (esimerkiksi `Date.now()`)
     1. [Järjestä](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort) ilmoitukset render-metodissa aikaleiman mukaan, uusin ylimmäksi
