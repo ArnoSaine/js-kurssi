@@ -173,7 +173,7 @@ function(doc) {
 1. Tee [Create React App](https://github.com/facebookincubator/create-react-app) -työkalulla uusi React-projekti
 1. Asenna oheiset riippuvuudet
     ```
-    npm install --save concurrently koa koa-proxy koa-socket koa-static pouchdb pouchdb-server socket.io
+    npm install --save concurrently koa koa-proxy koa-socket koa-static pouchdb pouchdb-server
     npm install --save-dev bootstrap react-bootstrap socket.io-client
     ```
 1. Aseta `main`- ja `proxy`-arvot, ja lisää skriptit `package.json`:iin
