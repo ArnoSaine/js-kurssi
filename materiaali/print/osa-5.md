@@ -136,7 +136,7 @@ React.createElement(
 ```
 
 ### Isoilla ja pienillä kirjaimilla on merkitystä
-~~`onclick`~~, `onCLick`
+~~`onclick`~~, `onClick`
 
 # Hyvä tietää / yleisimmät ongelmat
 ## className ja htmlFor

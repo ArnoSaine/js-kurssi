@@ -116,7 +116,7 @@ console.log(b); // => 123
 * Kaikki arvot ovat booleaniksi muutettuna joko tosia tai epätosia
 * Arvo voidaan kääntää vastakkaiseksi `!`-operaattorilla: `if (!moo) {...}`
 * Säännöt kannattaa opetella, jotta koodi pysyy lyhyenä ja luettavana
-  * Riittää kun osaa Falsy-säännöt – muut ovat truthy
+  * Riittää kun osaa *falsy*-säännöt – muut ovat *truthy*
   * Yleensä on syytä tehdä vain vähimmäistarkistukset ja luottaa siihen, ettei funktiota kutsuta väärillä parametreilla
     * ~~`if (moo === false) {}`~~ → `if (!moo) {}`
   * Kaikenkattavia tarkistuksia olisi työlästä kirjoittaa

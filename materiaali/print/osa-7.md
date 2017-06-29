@@ -64,7 +64,7 @@ foreach ($arr as $row) {
 * Palvelin **lähettää** tiedot muutoksista siitä kiinnostuneille selaimelle (ja toisille palvelimille)
   * [SockJS](https://github.com/sockjs/sockjs-client):llä tai [Socket.IO](https://socket.io/):lla viestit selaimeen
   * Tietokannaksi sellainen, joka tukee tehokkaasti muutosten kuuntelua
-    * (Avainsanoja sopivan tietokannan etsintään: *changes*, *feed*, *real-time*, *reactive*)
+    * (Avainsanoja sopivan tietokannan etsintään: *changes*, *feed*, *real-time*, *triggers*, *reactive*)
 * DOM:n muokkaus kirjaston avulla
   * Näkymän päivitykseen riittää että dataa muutetaan
 
@@ -379,7 +379,6 @@ function(doc) {
     ```
 
 1. Avaa tietokannan hallitapaneeli [http://localhost:5984/_utils/](http://localhost:5984/_utils/)
-1. Lisää tietokanta *"ilmoitustaulu"* (tietokannan nimeä käytetään myöhemmin API-kutsuissa)
 1. Avaa sovellus ([http://localhost:3000](http://localhost:3000)) ja kokeile lisätä muutamia ilmoituksia
 
 # Tehtävä
