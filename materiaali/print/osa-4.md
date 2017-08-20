@@ -92,7 +92,7 @@ module.export = {
     ```json
     {
       "name": "my-app",
-      "version": "0.0.0"
+      "version": "0.1.0"
     }
     ```
 
@@ -106,9 +106,7 @@ module.export = {
 #### `npm install --save-dev some-package` – devDependencies
 * Asentaa komentoon listatut paketit `node_modules`-kansioon
 * `--save-dev`-optio lisää arvon `package.json`:n `devDependencies`-listaan
-#### `npm install --save some-package` – dependencies
-* Asentaa komentoon listatut paketit `node_modules`-kansioon
-* `--save`-optio lisää arvon `package.json`:n `dependencies`-listaan
+* `--save`-optio lisää arvon `package.json`:n `dependencies`-listaan (oletustoiminto npm v.5 alkaen)
 
 ##### Huomioita :grey_exclamation:
 * Jos et käytä `--save-dev` / `--save`-optiota, muista muokata `package.json`:ia käsin, jotta riippuvuus asentuu muillekin kehittäjille
@@ -120,7 +118,7 @@ module.export = {
   * ja paketti käyttää asennuksen jälkeen muita paketteja
 
 ### Muuta
-Jos epäilet asennusten olevan sekaisin, `node_modules`-kansion voi poistaa ja suorittaa `npm install`-komennon uudelleen
+Jos epäilet asennusten olevan sekaisin, `node_modules`-kansion voi poistaa ja `npm install`-komennon voi suorittaa uudelleen
 
 # Paketit
 

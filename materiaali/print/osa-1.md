@@ -290,7 +290,7 @@ g(); // f-funktion sisällä: this === obj
 
 * Virtuaaliset metodit / funktioiden lainaus
 
-`obj::h(1, 2, 3);` [Esitetty standardiin](https://github.com/tc39/proposal-bind-operator) :fireworks:
+`obj::h(1, 2, 3);` [Esitetty standardiin](https://github.com/tc39/proposal-bind-operator) :zap:
 
 `h.call(obj, 1, 2, 3);`
 
@@ -364,7 +364,7 @@ Usein `Object.keys`, `values` ja `entries` ovat hyödyllisiä yhdistettynä `Arr
 # Tehtävä
 
 1. Avaa Babel REPL <a href="https://babeljs.io/repl/#?babili=false&evaluate=true&lineWrap=false&presets=env%2Creact%2Cstage-0%2Cstage-1%2Cstage-2%2Cstage-3&targets=&browsers=&builtIns=false&debug=false&experimental=true&loose=false&spec=false&code=function%20transform(text)%20%7B%0A%20%20return%20text%3B%0A%7D%0Aconsole.log(transform('testi%C3%A4'))%3B" target="_blank">tästä</a>
-1. Muokkaa `transform`-funktiota siten, että se paluttaa tekstin, jossa `text`-parametrin kirjaimet ovat siirretty QWERTY-näppäimistössä oikealle, eli `q` → `w`, `a` → `s`, `ä` → `a`, jne.
+1. Muokkaa `transform`-funktiota siten, että se paluttaa tekstin, jossa `text`-parametrin kirjaimet ovat siirretty QWERTY-näppäimistössä oikealle, eli `q` → `w`, `a` → `s`, `m` → `z`, jne.
    * Käytä ratkaisussa läpikäytyjä String- ja Array-prototyyppien funktioita
    * Pyri funktionaaliseen ratkaisuun
      * Vältä `while`- ja `for`-rakenteita ja `let`- ja `var`-muuttujia
@@ -376,38 +376,3 @@ Usein `Object.keys`, `values` ja `entries` ovat hyödyllisiä yhdistettynä `Arr
 1. Isojen kirjainten käsittely
 1. Erikoismerkkien käsittely
    * Erikoismerkit palautetaan sellaisenaan
-
-### Esimerkkiratkaisu
-```js
-const rows = ['qwertyuiopå', 'asdfghjklöä', 'zxcvbnm'];
-const charLists = [
-  ...rows,
-  ...rows.map(row => row.toUpperCase()),
-  '1234567890'
-];
-
-const transform = transformer => text =>
-  text.split('').map(char => {
-    const chars = charLists.find(list => list.includes(char));
-    return chars
-      ? transformer(chars.indexOf(char), chars)
-      : char;
-  }).join('');
-
-const shiftRight = transform((index, chars) => {
-  const i = index + 1;
-  return i < chars.length
-    ? chars[i]
-    : chars[0];
-});
-
-const shiftLeft = transform((index, chars) => {
-  const i = index - 1;
-  return i < 0
-    ? chars[chars.length - 1]
-    : chars[i];
-});
-
-console.log(shiftRight('Moi! testiä 123')); // => "Zpo! yrdyoa 234"
-console.log(shiftLeft('Zpo! yrdyoa 234')); // => "Moi! testiä 123"
-```

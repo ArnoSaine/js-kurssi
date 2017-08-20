@@ -15,7 +15,7 @@ const icons = [
   'hand-peace-o'
 ];
 const emojis = [
-  'fireworks',
+  'zap',
   'thumbsup',
   'thumbsdown',
   'neutral_face',

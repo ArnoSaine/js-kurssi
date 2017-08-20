@@ -5,7 +5,7 @@
 * Tärkeimmät työkalut tutuiksi
 * React
 
-:fireworks:-merkillä korostetaan kohdat jotka mahdollisesti muuttuvat/vanhenevat ensimmäisenä.
+:zap:-merkillä korostetaan kohdat jotka mahdollisesti muuttuvat/vanhenevat ensimmäisenä.
 
 ##### Arno Saine – [arno@mowhi.com](mailto:arno@mowhi.com) – 2017
 
@@ -29,7 +29,7 @@
 # Mihin ei kannata panostaa
 
 * Koodimuotoiluun
-  * [Prettier](https://github.com/prettier/prettier)-työkalu korjaa muotoilut ja huomauttaa virheistä :fireworks:
+  * [Prettier](https://github.com/prettier/prettier)-työkalu korjaa muotoilut ja huomauttaa virheistä :zap:
 * jQueryyn
   * Pienet DOM-muokkaukset tehdään selaimen natiiveilla toiminnoilla
   * Varsinaisissa sovelluksissa DOM-muokkaus tehdään Reactin, Angularin tai vastaavien toimesta

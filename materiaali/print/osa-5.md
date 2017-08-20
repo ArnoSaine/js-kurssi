@@ -171,7 +171,7 @@ React.createElement(
 ```js
 const Tarvikkeet = ({ tarvikkeet }) => (
   <div>
-    {tarvikkeet.map(Tarvike)}
+    {tarvikkeet.map(tarvike)}
   </div>
 );
 ```
@@ -205,6 +205,9 @@ const Tarvikkeet = ({ tarvikkeet }) => (
 
 ### [React Tutorial (Facebook)](https://facebook.github.io/react/tutorial/tutorial.html)
 * Perusteita kurssin muodossa
+
+### [React Express](http://www.react.express/)
+* All-in-one guide
 
 ### [React Fundamentals](https://reacttraining.com/online/react-fundamentals)
 * Kattavasti asiaa kurssin muodossa
@@ -256,4 +259,4 @@ const Tarvikkeet = ({ tarvikkeet }) => (
 1. Listaa jo valitut päivämäärät
 1. Lisää "Uusi peli" -painike
 
-[Lisätietoa pelistä](https://www.youtube.com/watch?v=ETb6MqCAo1Q)
+[Lisätietoa pelistä (YouTube)](https://www.youtube.com/watch?v=ETb6MqCAo1Q)

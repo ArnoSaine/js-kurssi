@@ -328,7 +328,9 @@ function(doc) {
             <h1>Ilmoitustaulu</h1>
             <Row>
               <Col xs={12} sm={7} md={8} lg={9}>
-                {this.state.ilmoitukset.map(Ilmoitus)}
+                {this.state.ilmoitukset.map(ilmoitus =>
+                  <Ilmoitus key={ilmoitus._id} {...ilmoitus} />
+                )}
               </Col>
               <Col xs={12} sm={5} md={4} lg={3}>
                 <form onSubmit={this.onSubmit}>
@@ -359,8 +361,8 @@ function(doc) {
     import React from 'react';
     import { Alert } from 'react-bootstrap';
 
-    const Ilmoitus = ({ _id, teksti }) => (
-      <Alert key={_id}>
+    const Ilmoitus = ({ teksti }) => (
+      <Alert>
         {teksti}
       </Alert>
     );

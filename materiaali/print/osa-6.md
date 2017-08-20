@@ -228,16 +228,16 @@ export default user(
 
 ```js
 <FormattedMessage
-  id=""
+  id="app.greeting"
   values={{
     name: 'Eric'
   }}
 />
 ```
 
-Käännöstekstien tiedostot, kuten `messages.fi-FI.properties`:
+Käännöstiedostot, kuten `messages.fi-FI.properties`:
 ```
-app.greeting = Hello, {name}!
+app.greeting = Hei, {name}!
 ```
 
 [React Intl](https://github.com/yahoo/react-intl)
