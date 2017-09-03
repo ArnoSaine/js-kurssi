@@ -553,6 +553,7 @@ const henkilöKopio = { a: 1, b: 2, ...henkilö, nimi: '(tuntematon)' };
       <head>
         <meta charset="UTF-8">
         <title>npm Package Expert</title>
+      </head>
       <body>
         <div id="root"></div>
         <script type="text/javascript" src="/lib/client/index.js"></script>

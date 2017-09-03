@@ -33,7 +33,7 @@
 
 # Moduulisyntaksi
 
-`./a.js`:
+`a.js`:
 ```js
 // Default export
 export default function moo() {
@@ -44,7 +44,7 @@ export default function moo() {
 export const dii = 123;
 ```
 
-`./b.js`:
+`b.js`:
 ```js
 import moo, { dii } from './a';
 
@@ -188,7 +188,7 @@ Alle 1.0 versioita pidetään epävirallisina ja ovat ilman patch-versiota (0.ma
 
 # Tehtävä
 
-1. Asenna edellisen tehtävän projektiin Webpack, babel-polyfill, sekä seuraavat konfigurointiin ja kehitykseen liittyvät paketit
+1. Asenna edellisen tehtävän projektiin Webpack, babel-polyfill, sekä muut oheiset konfigurointiin ja kehitykseen liittyvät paketit
     ```
     npm install --save-dev webpack babel-loader babel-polyfill cross-env extract-text-webpack-plugin webpack-livereload-plugin css-loader file-loader style-loader url-loader
     ```
@@ -278,6 +278,7 @@ Alle 1.0 versioita pidetään epävirallisina ja ovat ilman patch-versiota (0.ma
     <link href="/build/bundle.css" rel="stylesheet">
     <!-- -->
     <script type="text/javascript" src="/build/bundle.js"></script>
+    <!--script type="text/javascript" src="/lib/client/index.js"></script-->
     ```
 
 1. Tee `src/client/index.js`-tiedostossa `app`-muuttujasta globaali, jotta HTML-koodin `onclick`:eissä voidaan viitata siihen

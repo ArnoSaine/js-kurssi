@@ -71,8 +71,12 @@ class Laskuri extends Component {
 * `props`:eja, `state`:a sekä muita arvoja välitetään **alaspäin** toisille komponenteille
 * Ylöspäin tietoa välitetään `callback`-funktioiden avulla, mikäli sellaisia on saatu itselle `props`:ssa
 ```js
-<Puutavara nimi="Koivuvaneri" hinta={this.props.hinta} />
-<button onClick={() => this.props.osta(3)}>Osta 3</button>
+render() {
+  return <div>
+    <Puutavara nimi="Koivuvaneri" hinta={this.props.hinta} />
+    <button onClick={() => this.props.osta(3)}>Osta 3</button>
+  </div>;
+}
 ```
 
 * Sovelluksessa voi olla useita *stateful*-komponentteja
@@ -89,11 +93,15 @@ class Laskuri extends Component {
   * `{}`-merkkien sisälle JavaScriptiä, jossa:
     * `<>`-merkkien sisälle JSX:ää, jne.
 ```js
-const materiaali = 'vaahtera';
-const disabled = true;
+render() {
+  const materiaali = 'vaahtera';
+  const disabled = true;
 
-<div>Materiaali: {materiaali}</div>
-<button disabled={disabled}>Tallenna</button>
+  return <div>
+    <div>Materiaali: {materiaali}</div>
+    <button disabled={disabled}>Tallenna</button>
+  </div>;
+}
 ```
 
 ### JSX kääntyy `React.createElement`-funktiokutsuiksi
@@ -109,8 +117,12 @@ React.createElement(
 ### **Isolla** kirjaimella alkavat elementit ovat *React-komponentteja*, **pienellä** kirjaimella alkavat elementit ovat *HTML-elementtejä*
 * Komponentti palauttaa HTML-elementtejä tai toisia komponentteja, jotka lopulta palauttavat HTML-elementtejä
 ```js
-<h1>Tiedot</h1>
-<Puutavara tyyppi="lauta" materiaali="mänty" />
+render() {
+  return <div>
+    <h1>Tiedot</h1>
+    <Puutavara tyyppi="lauta" materiaali="mänty" />
+  </div>;
+}
 ```
 
 # Huomioita
