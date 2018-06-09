@@ -10,7 +10,7 @@
 
 * IE ja muut kehittyivät eri tahtia ja osittain eri suuntiin \(esimerkiksi ActiveX ja XMLHttpRequest\)
 * Standardista oli erimielisyyksiä eikä se kehittynyt
-* Tuli tilaa apukirjastoille, joista erityisesti jQuery sai suurta suosiota
+* Tuli tilaa apukirjastoille, joista erityisesti jQuery keräsi suurta suosiota
 
 ### 2009
 
@@ -21,7 +21,7 @@
 ### 2015
 
 * **ES2015:** Uusia hyödyllisiä ominaisuuksia syntaksiin ja globaaleihin. Koodi on käännettävissä yhteensopivaksi vanhoihin selaimiin [Babelilla](https://babeljs.io/).
-* Suunnitelma, miten kieleen tuodaan uusia ominaisuuksia. Selainvalmistajat ovat sitoutuneita
+* Suunnitelma, miten kieleen tuodaan uusia ominaisuuksia, johon selainvalmistajat ovat sitoutuneita
 
 ### 2016
 
@@ -30,5 +30,5 @@
 ### 2017
 
 * **ES2017:** Uusia ominaisuuksia
-* Babel-kääntäjään ympäristökohtainen käännösominaisuus \([Env preset](https://babeljs.io/docs/plugins/preset-env/)\) - Käännetään vain toiminnot jota kohdeympäristö ei tue natiivisti - Selkeä polku eteenpäin, jolla uusia ominaisuuksia voidaan tuoda ja hyödyntää natiivisti niissä ympäristöissä jotka toimintoja tukevat
+* Babel-kääntäjään ympäristökohtainen käännösominaisuus \([Env preset](https://babeljs.io/docs/plugins/preset-env/)\). Käännetään vain toiminnot jota kohdeympäristö ei tue natiivisti – selkeä polku eteenpäin, jolla uusia ominaisuuksia voidaan tuoda ja hyödyntää natiivisti niissä ympäristöissä jotka toimintoja tukevat
 
