@@ -1,7 +1,7 @@
 # Sisältö
 
-* JavaScriptin teoriaa
-  * Historiaa
+* Historiaa lyhyesti
+* Teoriaa
   * Tyypit
   * Vertailuista ja loogisten operaattorien käytöstä
   * Objektit ja prototyyppiketju
