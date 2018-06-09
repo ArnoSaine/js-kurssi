@@ -9,7 +9,7 @@ const num = 123;
 console.log(typeof num); // => "number"
 ```
 
-| `typeof x` | Esimerkki |
+| **`typeof x`** | **Esimerkki** |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | `'undefined'` | `undefined`, `let moo` |
 | `'object'` | `{}`, `[]`, `new Date()`, `/^abc$/`, `null` |
