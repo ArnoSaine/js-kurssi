@@ -1,7 +1,5 @@
 # Sisältö
 
-
-
 * JavaScriptin teoriaa
   * Historiaa
   * Tyypit
