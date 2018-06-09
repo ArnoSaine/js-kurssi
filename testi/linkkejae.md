@@ -1,0 +1,16 @@
+# Linkkejä
+
+### [Airbnb JavaScript Style Guide](https://github.com/airbnb/javascript)
+
+* Hyvät koodauskäytännöt jotka opettavat myös teoriaa
+
+### [Crockford on JavaScript – Volume 1…Section 8](https://www.youtube.com/playlist?list=PLEzQf147-uEpvTa1bHDNlxUL2klHUMHJu)
+
+* Erinomainen videosarja JavaScriptistä ja hieman ohjelmoinnista yleisestikin
+* Pieniltä osin vanhentunut
+  * Uuden syntaksin nuolifunktiot ja luokat helpottavat this-arvon käsittelyä ja luokkien käyttöä
+
+### [MDN](https://developer.mozilla.org/docs/Web/JavaScript)
+
+* Mozilla Developer Network – JavaScript
+
