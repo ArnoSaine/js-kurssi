@@ -1,6 +1,6 @@
 # Table of contents
 
-* [Sisältö](README.md)
+* [JavaScript-kurssi](README.md)
 
 ## Osa 1: JavaScriptin sisäänrakennetut toiminnot
 
@@ -12,6 +12,7 @@
 
 * [Tyypit](osa-2-dom-jquery-json-fetch-api/tyypit.md)
 * [Viittaukset ja kopiot](osa-2-dom-jquery-json-fetch-api/viittaukset-ja-kopiot.md)
+* [Yhtäsuuruusvertailut](osa-2-dom-jquery-json-fetch-api/yhtaesuuruusvertailut.md)
 
 ## Osa 2: DOM, jQuery, JSON, Fetch API
 
