@@ -18,7 +18,7 @@ console.log('moo'.toUpperCase()); // => "MOO"
 1. Luodaan uusi string-arvo \(`'moo'`\)
 2. Etsitään property \(`.toUpperCase`\)
 3. Arvolla ei ole sennimistä propertyä
-4. Mennään prototyyppiketjussa ylöspäin ja katsotaan löytyykö property prototyypistä \(`'moo'.__proto__.toUpperCase` / `Object.getPrototypeOf('moo').toUpperCase)`
+4. Mennään prototyyppiketjussa ylöspäin ja katsotaan löytyykö property prototyypistä \(`Object.getPrototypeOf('moo').toUpperCase`\)
 5. Protototyypistä löytyy `toUpperCase` \(`String.prototype.toUpperCase`\)
 6. Suoritetaan funktio \(`()`\)
    * Koska funktiota kutsutaan `.`-notaatiolla, funktion sisällä this-arvo viittaa `.`-operaattorin vasemmanpuoleiseen arvoon, eli arvoon `'moo'`
