@@ -31,7 +31,7 @@ const g = obj.f.bind(obj);
 g(); // f-funktion sisällä: this === obj
 ```
 
-* Arvoon `g` asetetaan `f`-funktiosta versio, jonka this-arvo on lukittu viittaamaan arvoon `obj`
+* Arvoon `g` asetetaan funktiosta `f` versio, jonka this-arvo on lukittu viittaamaan arvoon `obj`
 
 [ES2015 arrow-funktiot](https://babeljs.io/learn-es2015/#arrows-and-lexical-this) helpottavat this-arvon käsittelyä.
 

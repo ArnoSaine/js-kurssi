@@ -10,3 +10,23 @@
 
 Kaikki yllämainitut suorittavat funktion `f` argumenteilla `1`, `2`, `3`. Funktion sisällä `this === obj`.
 
+### Property-kutsu on ainoastaan vaihtoehtoinen \(normaali\) syntaksi `.call`-funktiolle
+
+```javascript
+// Funktio liitettynä objektiin ja sen kutsuminen:
+obj.f(1, 2, 3);
+// Sama kuin:
+f.call(obj, 1, 2, 3);
+```
+
+### Tavallinen funktiokutsu vastaa this-arvon asettamista `undefined`:ksi
+
+```javascript
+// Tavallinen funktiokutsu:
+f(1, 2, 3);
+// Sama kuin:
+f.call(undefined, 1, 2, 3);
+```
+
+
+
