@@ -1,0 +1,38 @@
+# Fetch API
+
+* Yksinkertainen rajapinta palvelimen kanssa kommunikointiin
+  * \(Hieman\) Kuten jQueryn `$.ajax` \([lisätietoa](https://github.com/github/fetch#caveats)\). Eroina:
+    * Vastaus-Promise menee virhe-\(reject\) -tilaan ainoastaan jos pyyntöä ei pystytä suorittamaan loppuun, esimerkiksi virheellisistä parametreista tai verkkoyhteydestä johtuen
+    * Oletuksena `fetch` ei lähetä eikä vastaanota evästeitä
+* `response.ok`-boolean-arvo asetetaan HTTP-statuskoodin perusteella
+  * `true`, jos statuskoodi on välillä 200-299
+* Uusissa selaimissa
+* Saatavilla vanhoihin selaimiin [polyfillinä](https://github.com/github/fetch)
+
+### Esimerkki
+
+```javascript
+fetch('/persons.json')
+  .then(function (response) {
+    return response.json();
+  })
+  .then(function (data) {
+    console.log(data);
+  });
+```
+
+### Esimerkki ES2017 async-funktiolla \*
+
+```javascript
+async function listPersons() {
+  const response = await fetch('/persons.json');
+  const persons = await response.json();
+  console.log(persons);
+}
+listPersons();
+```
+
+[Lisää esimerkkejä](https://github.com/github/fetch#usage)
+
+\*[Uusissa selaimissa, käännettävissä vanhoihin selaimiin](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/async_function)
+

@@ -26,3 +26,15 @@
 * [Linkkejä](osa-1-javascriptin-sisaeaenrakennetut-toiminnot/linkkejae.md)
 * [Tehtävä](osa-1-javascriptin-sisaeaenrakennetut-toiminnot/tehtaevae.md)
 
+## Osa 2: DOM, jQuery, JSON, Fetch API
+
+* [Sisältö](osa-2-dom-jquery-json-fetch-api/sisaeltoe-1.md)
+* [Document Object Model](osa-2-dom-jquery-json-fetch-api/document-object-model.md)
+* [Muokkaus](osa-2-dom-jquery-json-fetch-api/muokkaus.md)
+* [Events](osa-2-dom-jquery-json-fetch-api/events.md)
+* [jQuery](osa-2-dom-jquery-json-fetch-api/jquery.md)
+* [JSON](osa-2-dom-jquery-json-fetch-api/json/README.md)
+  * [Esimerkkejä](osa-2-dom-jquery-json-fetch-api/json/esimerkkejae.md)
+* [Fetch API](osa-2-dom-jquery-json-fetch-api/fetch-api.md)
+* [Tehtäviä](osa-2-dom-jquery-json-fetch-api/tehtaeviae.md)
+
