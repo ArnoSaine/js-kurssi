@@ -3,12 +3,12 @@
 ### Elementin etsintä ja tyylin muokkaus
 
 ```javascript
-const h1 = document.querySelector('#root h2');
-if (h1) {
+const h2 = document.querySelector('#root h2');
+if (h2) {
   // style-objektissa on elementin inline-tyylit.
-  h1.style.backgroundColor = 'lime';
+  h2.style.backgroundColor = 'lime';
   // JavaScriptillä asetetut arvot voi myös lukea.
-  console.log(h1.style.backgroundColor); // => "lime"
+  console.log(h2.style.backgroundColor); // => "lime"
 }
 ```
 

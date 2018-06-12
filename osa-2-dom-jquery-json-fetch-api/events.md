@@ -6,9 +6,9 @@
 function onClick(event) {
   event.target.style.backgroundColor = 'skyblue';
 }
-const h1 = document.querySelector('#root h1');
-if (h1) {
-  h1.addEventListener('click', onClick);
+const h2 = document.querySelector('#root h2');
+if (h2) {
+  h2.addEventListener('click', onClick);
 }
 // Jos kuuntelijoita lisätään dynaamisesti esimerkiksi käyttäjän toimenpiteistä
 // johtuen, on kuuntelijat vastaavasti syytä poistaa hallitusti, jotta muistivuotoja
