@@ -23,7 +23,9 @@
 | `Object.entries` | Palauttaa objektin omat propertyt key–value -pareina | `Object.entries({ a: 1, b: 2 }); // [['a', 1], ['b', 2]]` |
 | `Array.isArray` | Palauttaa `true` tai `false` riippuen, onko annettu parametri taulukko-objekti | `Array.isArray([1, 2, 3]); // true` |
 
+{% hint style="info" %}
 Usein `Object.keys`, `values` ja `entries` ovat hyödyllisiä yhdistettynä `Array`-funktioihin, kuten `map` ja `filter`.
+{% endhint %}
 
 [Täydellinen lista globaaleista objekteista MDN:ssä](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects)
 

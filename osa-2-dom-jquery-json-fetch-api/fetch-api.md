@@ -34,5 +34,5 @@ listPersons();
 
 [Lisää esimerkkejä](https://github.com/github/fetch#usage)
 
-\*[Uusissa selaimissa, käännettävissä vanhoihin selaimiin](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/async_function)
+\* [Uusissa selaimissa, käännettävissä vanhoihin selaimiin](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/async_function)
 
