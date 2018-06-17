@@ -38,3 +38,24 @@
 * [Fetch API](osa-2-dom-jquery-json-fetch-api/fetch-api.md)
 * [Tehtäviä](osa-2-dom-jquery-json-fetch-api/tehtaeviae.md)
 
+## Osa 3: Polyfill, selainyhteensopivuus, syntaksin uudet ominaisuudet, Babel
+
+* [Sisältö](osa-3-polyfill-selainyhteensopivuus-syntaksin-uudet-ominaisuudet-babel/sisaeltoe.md)
+* [Polyfill](osa-3-polyfill-selainyhteensopivuus-syntaksin-uudet-ominaisuudet-babel/polyfill/README.md)
+  * [Periaate](osa-3-polyfill-selainyhteensopivuus-syntaksin-uudet-ominaisuudet-babel/polyfill/periaate.md)
+  * [Hyödyt, haitat ja muita huomioita](osa-3-polyfill-selainyhteensopivuus-syntaksin-uudet-ominaisuudet-babel/polyfill/hyoedyt-haitat-ja-muita-huomioita.md)
+  * [Käyttöönotto](osa-3-polyfill-selainyhteensopivuus-syntaksin-uudet-ominaisuudet-babel/polyfill/kaeyttoeoenotto.md)
+* [Havaintoja selainyhteensopivuudesta](osa-3-polyfill-selainyhteensopivuus-syntaksin-uudet-ominaisuudet-babel/omia-havaintoja-selainyhteensopivuudesta.md)
+* [Syntaksin uudet ominaisuudet](osa-3-polyfill-selainyhteensopivuus-syntaksin-uudet-ominaisuudet-babel/syntaksin-uudet-ominaisuudet/README.md)
+  * [Arrow \(“nuolifunktio”\)](osa-3-polyfill-selainyhteensopivuus-syntaksin-uudet-ominaisuudet-babel/syntaksin-uudet-ominaisuudet/arrow-nuolifunktio.md)
+  * [Class](osa-3-polyfill-selainyhteensopivuus-syntaksin-uudet-ominaisuudet-babel/syntaksin-uudet-ominaisuudet/class.md)
+  * [Template strings](osa-3-polyfill-selainyhteensopivuus-syntaksin-uudet-ominaisuudet-babel/syntaksin-uudet-ominaisuudet/template-strings.md)
+  * [Destructuring \(taulukoiden ja objektien “purku”\)](osa-3-polyfill-selainyhteensopivuus-syntaksin-uudet-ominaisuudet-babel/syntaksin-uudet-ominaisuudet/destructuring-taulukoiden-ja-objektien-purku.md)
+  * [Objektimäärityksen lyhenne](osa-3-polyfill-selainyhteensopivuus-syntaksin-uudet-ominaisuudet-babel/syntaksin-uudet-ominaisuudet/objektimaeaerityksen-lyhenne.md)
+  * [Rest spread \(“muut”-operaattori\)](osa-3-polyfill-selainyhteensopivuus-syntaksin-uudet-ominaisuudet-babel/syntaksin-uudet-ominaisuudet/rest-spread-muut-operaattori.md)
+* [Babel](osa-3-polyfill-selainyhteensopivuus-syntaksin-uudet-ominaisuudet-babel/babel.md)
+* [Linkkejä](osa-3-polyfill-selainyhteensopivuus-syntaksin-uudet-ominaisuudet-babel/linkkejae.md)
+* [Tehtävä](osa-3-polyfill-selainyhteensopivuus-syntaksin-uudet-ominaisuudet-babel/tehtaevae/README.md)
+  * [Valmistelut](osa-3-polyfill-selainyhteensopivuus-syntaksin-uudet-ominaisuudet-babel/tehtaevae/tehtaevae-valmistelut.md)
+  * [Tehtävä](osa-3-polyfill-selainyhteensopivuus-syntaksin-uudet-ominaisuudet-babel/tehtaevae/tehtaevae.md)
+
