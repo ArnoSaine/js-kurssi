@@ -10,6 +10,10 @@
 
 * The Modern JavaScript Tutorial
 
+### [Awesome JavaScript](https://github.com/sorrycc/awesome-javascript)
+
+* Iso kokoelma linkkejä ryhmiteltynä aihepiireittäin
+
 ### [Exploring JS](http://exploringjs.com/)
 
 * Maksuttomia JavaScript-kirjoja uusistakin tekniikoista
