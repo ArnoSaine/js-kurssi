@@ -1,0 +1,34 @@
+# Versiointi
+
+* Kun paketti on julkaistu tietyllä versiolla, sisältöä ei ole mahdollista muuttaa
+* Muutokset tehdään julkaisemalla uusi paketti, jossa versionumeroa on kasvatettu edellisestä
+* Numeroinnissa tulisi noudattaa semver-käytäntöä, mutta pakollista sen noudattaminen ei ole
+* Päivitettäessä riippuvuutena oleva paketin versiota, on turvallisinta lukea paketin _changelog_- tai _release notes_ -tiedosto \(löytyy usein versionhallinnasta\)
+
+### [Semver](http://semver.org/)-versionumerot – major.minor.patch
+
+#### Major
+
+* Muutoksia, jotka eivät ole yhteensopivia edellisen version kanssa
+* Päivitetys on tehtävä harkiten – saattaa vaatia muutoksia omaan koodiin
+
+#### Minor
+
+* Muutoksia, jotka ovat yhteensopivia edellisen version kanssa
+* Turvallista päivittää uusimpaan
+
+#### Patch
+
+* Bugikorjauksia
+* Suositeltavaa päivittää uusimpaan
+
+{% hint style="info" %}
+Alle 1.0 versioita pidetään epävirallisina ja ovat ilman patch-versiota \(0.major.minor\)
+{% endhint %}
+
+### [Semver calculator](https://semver.npmjs.com/)
+
+* Näyttää pakettien saatavilla olevat versiot
+* Auttaa pakettien käyttäjiä valitsemaan haluamansa “range”:n
+  * Esimerkiksi `^1.0.4` asentaa uusimman version, joka on välillä **1.0.4 – 1.x**
+
