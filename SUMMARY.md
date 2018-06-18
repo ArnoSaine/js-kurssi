@@ -28,7 +28,7 @@
 
 ## Osa 2: DOM, jQuery, JSON, Fetch API
 
-* [Sisältö](osa-2-dom-jquery-json-fetch-api/sisaeltoe-1.md)
+* [Sisältö](osa-2-dom-jquery-json-fetch-api/sisaeltoe.md)
 * [Document Object Model](osa-2-dom-jquery-json-fetch-api/document-object-model.md)
 * [Muokkaus](osa-2-dom-jquery-json-fetch-api/muokkaus.md)
 * [Events](osa-2-dom-jquery-json-fetch-api/events.md)
@@ -45,7 +45,7 @@
   * [Periaate](osa-3-polyfill-selainyhteensopivuus-syntaksin-uudet-ominaisuudet-babel/polyfill/periaate.md)
   * [Hyödyt, haitat ja muita huomioita](osa-3-polyfill-selainyhteensopivuus-syntaksin-uudet-ominaisuudet-babel/polyfill/hyoedyt-haitat-ja-muita-huomioita.md)
   * [Käyttöönotto](osa-3-polyfill-selainyhteensopivuus-syntaksin-uudet-ominaisuudet-babel/polyfill/kaeyttoeoenotto.md)
-* [Havaintoja selainyhteensopivuudesta](osa-3-polyfill-selainyhteensopivuus-syntaksin-uudet-ominaisuudet-babel/omia-havaintoja-selainyhteensopivuudesta.md)
+* [Havaintoja selainyhteensopivuudesta](osa-3-polyfill-selainyhteensopivuus-syntaksin-uudet-ominaisuudet-babel/havaintoja-selainyhteensopivuudesta.md)
 * [Syntaksin uudet ominaisuudet](osa-3-polyfill-selainyhteensopivuus-syntaksin-uudet-ominaisuudet-babel/syntaksin-uudet-ominaisuudet/README.md)
   * [Arrow \(“nuolifunktio”\)](osa-3-polyfill-selainyhteensopivuus-syntaksin-uudet-ominaisuudet-babel/syntaksin-uudet-ominaisuudet/arrow-nuolifunktio.md)
   * [Class](osa-3-polyfill-selainyhteensopivuus-syntaksin-uudet-ominaisuudet-babel/syntaksin-uudet-ominaisuudet/class.md)
@@ -56,14 +56,14 @@
 * [Babel](osa-3-polyfill-selainyhteensopivuus-syntaksin-uudet-ominaisuudet-babel/babel.md)
 * [Linkkejä](osa-3-polyfill-selainyhteensopivuus-syntaksin-uudet-ominaisuudet-babel/linkkejae.md)
 * [Tehtävä](osa-3-polyfill-selainyhteensopivuus-syntaksin-uudet-ominaisuudet-babel/tehtaevae/README.md)
-  * [Valmistelut](osa-3-polyfill-selainyhteensopivuus-syntaksin-uudet-ominaisuudet-babel/tehtaevae/tehtaevae-valmistelut.md)
+  * [Valmistelut](osa-3-polyfill-selainyhteensopivuus-syntaksin-uudet-ominaisuudet-babel/tehtaevae/valmistelut.md)
   * [Tehtävä](osa-3-polyfill-selainyhteensopivuus-syntaksin-uudet-ominaisuudet-babel/tehtaevae/tehtaevae.md)
 
 ## Osa 4: Modularisointi ja kirjastojen käyttö, npm, Webpack
 
 * [Sisältö](osa-4-modularisointi-ja-kirjastojen-kaeyttoe-npm-webpack/sisaeltoe.md)
 * [Kirjastot ja modularisointi](osa-4-modularisointi-ja-kirjastojen-kaeyttoe-npm-webpack/kirjastot-ja-modularisointi.md)
-* [Lodash \(kirjastoesimerkki\)](osa-4-modularisointi-ja-kirjastojen-kaeyttoe-npm-webpack/esimerkkikirjasto-lodash.md)
+* [Lodash \(kirjastoesimerkki\)](osa-4-modularisointi-ja-kirjastojen-kaeyttoe-npm-webpack/lodash-kirjastoesimerkki.md)
 * [Moduulisyntaksi](osa-4-modularisointi-ja-kirjastojen-kaeyttoe-npm-webpack/moduulisyntaksi.md)
 * [npm](osa-4-modularisointi-ja-kirjastojen-kaeyttoe-npm-webpack/npm/README.md)
   * [Käyttö](osa-4-modularisointi-ja-kirjastojen-kaeyttoe-npm-webpack/npm/kaeyttoe.md)
