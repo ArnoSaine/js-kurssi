@@ -1,7 +1,5 @@
 # Sisältö
 
-
-
 * React
   * Taustaa
   * JSX-syntaksi
