@@ -1,0 +1,15 @@
+# React
+
+## Kirjasto näkymien tekemiseen {#exerslide-slide-title-1}
+
+### Yksinkertainen toimintaperiaate
+
+* Määritetään **komponentteja**
+* Komponentit voivat **koostua** toisista komponenteista
+* Komponentit määrittävät saamiensa `props`:ien \(parametrien\) ja sisäisen `state`:n \(tilan\) perusteella, **miltä komponentin pitäisi kussakin tilanteessa näyttää**
+
+### Pieni ja huomaamaton API
+
+* Tuttu ja tehokas tapa käsitellä dataa ja luoda dataan perustuvia näkymiä \(JavaScript\)
+* JSX-syntaksia lukuun ottamatta React on hyvin huomaamaton
+

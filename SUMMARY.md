@@ -5,6 +5,18 @@
 * [Mihin kannattaa panostaa](mihin-kannattaa-panostaa.md)
 * [Mihin ei kannata panostaa](mihin-ei-kannata-panostaa.md)
 
+## Osa 5: React – taustaa, JSX, hyvä tietää / yleisimmät ongelmat
+
+* [Sisältö](osa-5-react-taustaa-jsx-hyvae-tietaeae-yleisimmaet-ongelmat/sisaeltoe.md)
+* [React](osa-5-react-taustaa-jsx-hyvae-tietaeae-yleisimmaet-ongelmat/react/README.md)
+  * [Komponenttimalli skaalautuu kaikenkokoisiin sovelluksiin](osa-5-react-taustaa-jsx-hyvae-tietaeae-yleisimmaet-ongelmat/react/komponenttimalli-skaalautuu-kaikenkokoisiin-sovelluksiin.md)
+  * [Komponentit voivat olla joko tilattomia tai tilallisia](osa-5-react-taustaa-jsx-hyvae-tietaeae-yleisimmaet-ongelmat/react/komponentit-voivat-olla-joko-tilattomia-tai-tilallisia.md)
+  * [Data liikkuu yhteen suuntaan](osa-5-react-taustaa-jsx-hyvae-tietaeae-yleisimmaet-ongelmat/react/data-liikkuu-yhteen-suuntaan.md)
+  * [JSX](osa-5-react-taustaa-jsx-hyvae-tietaeae-yleisimmaet-ongelmat/react/jsx.md)
+  * [Huomioita](osa-5-react-taustaa-jsx-hyvae-tietaeae-yleisimmaet-ongelmat/react/huomioita.md)
+* [Linkkejä](osa-5-react-taustaa-jsx-hyvae-tietaeae-yleisimmaet-ongelmat/linkkejae.md)
+* [Tehtävä](osa-5-react-taustaa-jsx-hyvae-tietaeae-yleisimmaet-ongelmat/tehtaevae.md)
+
 ## Osa 1: JavaScriptin sisäänrakennetut toiminnot
 
 * [Sisältö](osa-1-javascriptin-sisaeaenrakennetut-toiminnot/sisaeltoe.md)

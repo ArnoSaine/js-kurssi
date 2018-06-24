@@ -1,0 +1,7 @@
+# Komponenttimalli skaalautuu kaikenkokoisiin sovelluksiin
+
+* Komponentit ovat itsessään pieniä ohjelmia
+* Isokin sovellus on ulospäin vain komponentti
+
+
+
