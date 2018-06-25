@@ -5,6 +5,25 @@
 * [Mihin kannattaa panostaa](mihin-kannattaa-panostaa.md)
 * [Mihin ei kannata panostaa](mihin-ei-kannata-panostaa.md)
 
+## React – lisää komponenteista, patterneja ja harvemmin tarvittavia ominaisuuksia, kirjastoja
+
+* [Sisältö](react-lisaeae-komponenteista-uudelleenkaeytettaevien-toimintojen-teko-kirjastoja/sisaeltoe.md)
+* [Komponentin metodit ja this-arvo](react-lisaeae-komponenteista-uudelleenkaeytettaevien-toimintojen-teko-kirjastoja/komponentin-metodit-ja-this-arvo.md)
+* [Patterneja](react-lisaeae-komponenteista-uudelleenkaeytettaevien-toimintojen-teko-kirjastoja/patterneja/README.md)
+  * [Render props](react-lisaeae-komponenteista-uudelleenkaeytettaevien-toimintojen-teko-kirjastoja/patterneja/render-props.md)
+  * [HOC – Higher-Order Components](react-lisaeae-komponenteista-uudelleenkaeytettaevien-toimintojen-teko-kirjastoja/patterneja/hoc-higher-order-components.md)
+* [Harvemmin tarvittavat ominaisuudet](react-lisaeae-komponenteista-uudelleenkaeytettaevien-toimintojen-teko-kirjastoja/harvemmin-tarvittavat-ominaisuudet/README.md)
+  * [Context](react-lisaeae-komponenteista-uudelleenkaeytettaevien-toimintojen-teko-kirjastoja/harvemmin-tarvittavat-ominaisuudet/context.md)
+  * [Refs](react-lisaeae-komponenteista-uudelleenkaeytettaevien-toimintojen-teko-kirjastoja/harvemmin-tarvittavat-ominaisuudet/refs.md)
+* [Utility-funktiot](react-lisaeae-komponenteista-uudelleenkaeytettaevien-toimintojen-teko-kirjastoja/utility-funktiot.md)
+* [Kirjastoja](react-lisaeae-komponenteista-uudelleenkaeytettaevien-toimintojen-teko-kirjastoja/kirjastoja/README.md)
+  * [React Router](react-lisaeae-komponenteista-uudelleenkaeytettaevien-toimintojen-teko-kirjastoja/kirjastoja/react-router.md)
+  * [React-Bootstrap](react-lisaeae-komponenteista-uudelleenkaeytettaevien-toimintojen-teko-kirjastoja/kirjastoja/react-bootstrap.md)
+  * [React Intl](react-lisaeae-komponenteista-uudelleenkaeytettaevien-toimintojen-teko-kirjastoja/kirjastoja/react-intl.md)
+  * [react-jsonschema-form](react-lisaeae-komponenteista-uudelleenkaeytettaevien-toimintojen-teko-kirjastoja/kirjastoja/react-jsonschema-form.md)
+* [Linkkejä](react-lisaeae-komponenteista-uudelleenkaeytettaevien-toimintojen-teko-kirjastoja/linkkejae.md)
+* [Tehtävä](react-lisaeae-komponenteista-uudelleenkaeytettaevien-toimintojen-teko-kirjastoja/tehtaevae.md)
+
 ## Osa 1: JavaScriptin sisäänrakennetut toiminnot
 
 * [Sisältö](osa-1-javascriptin-sisaeaenrakennetut-toiminnot/sisaeltoe.md)
