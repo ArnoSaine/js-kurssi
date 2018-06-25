@@ -5,25 +5,6 @@
 * [Mihin kannattaa panostaa](mihin-kannattaa-panostaa.md)
 * [Mihin ei kannata panostaa](mihin-ei-kannata-panostaa.md)
 
-## React – lisää komponenteista, patterneja ja harvemmin tarvittavia ominaisuuksia, kirjastoja
-
-* [Sisältö](react-lisaeae-komponenteista-uudelleenkaeytettaevien-toimintojen-teko-kirjastoja/sisaeltoe.md)
-* [Komponentin metodit ja this-arvo](react-lisaeae-komponenteista-uudelleenkaeytettaevien-toimintojen-teko-kirjastoja/komponentin-metodit-ja-this-arvo.md)
-* [Patterneja](react-lisaeae-komponenteista-uudelleenkaeytettaevien-toimintojen-teko-kirjastoja/patterneja/README.md)
-  * [Render props](react-lisaeae-komponenteista-uudelleenkaeytettaevien-toimintojen-teko-kirjastoja/patterneja/render-props.md)
-  * [HOC – Higher-Order Components](react-lisaeae-komponenteista-uudelleenkaeytettaevien-toimintojen-teko-kirjastoja/patterneja/hoc-higher-order-components.md)
-* [Harvemmin tarvittavat ominaisuudet](react-lisaeae-komponenteista-uudelleenkaeytettaevien-toimintojen-teko-kirjastoja/harvemmin-tarvittavat-ominaisuudet/README.md)
-  * [Context](react-lisaeae-komponenteista-uudelleenkaeytettaevien-toimintojen-teko-kirjastoja/harvemmin-tarvittavat-ominaisuudet/context.md)
-  * [Refs](react-lisaeae-komponenteista-uudelleenkaeytettaevien-toimintojen-teko-kirjastoja/harvemmin-tarvittavat-ominaisuudet/refs.md)
-* [Utility-funktiot](react-lisaeae-komponenteista-uudelleenkaeytettaevien-toimintojen-teko-kirjastoja/utility-funktiot.md)
-* [Kirjastoja](react-lisaeae-komponenteista-uudelleenkaeytettaevien-toimintojen-teko-kirjastoja/kirjastoja/README.md)
-  * [React Router](react-lisaeae-komponenteista-uudelleenkaeytettaevien-toimintojen-teko-kirjastoja/kirjastoja/react-router.md)
-  * [React-Bootstrap](react-lisaeae-komponenteista-uudelleenkaeytettaevien-toimintojen-teko-kirjastoja/kirjastoja/react-bootstrap.md)
-  * [React Intl](react-lisaeae-komponenteista-uudelleenkaeytettaevien-toimintojen-teko-kirjastoja/kirjastoja/react-intl.md)
-  * [react-jsonschema-form](react-lisaeae-komponenteista-uudelleenkaeytettaevien-toimintojen-teko-kirjastoja/kirjastoja/react-jsonschema-form.md)
-* [Linkkejä](react-lisaeae-komponenteista-uudelleenkaeytettaevien-toimintojen-teko-kirjastoja/linkkejae.md)
-* [Tehtävä](react-lisaeae-komponenteista-uudelleenkaeytettaevien-toimintojen-teko-kirjastoja/tehtaevae.md)
-
 ## Osa 1: JavaScriptin sisäänrakennetut toiminnot
 
 * [Sisältö](osa-1-javascriptin-sisaeaenrakennetut-toiminnot/sisaeltoe.md)
@@ -105,4 +86,23 @@
   * [Huomioita](osa-5-react-taustaa-jsx-hyvae-tietaeae-yleisimmaet-ongelmat-1/react/huomioita.md)
 * [Linkkejä](osa-5-react-taustaa-jsx-hyvae-tietaeae-yleisimmaet-ongelmat-1/linkkejae-1.md)
 * [Tehtävä](osa-5-react-taustaa-jsx-hyvae-tietaeae-yleisimmaet-ongelmat-1/tehtaevae-1.md)
+
+## Osa 6: React – lisää komponenteista, patterneja ja harvemmin tarvittavia ominaisuuksia, kirjastoja
+
+* [Sisältö](osa-6-react-lisaeae-komponenteista-patterneja-ja-harvemmin-tarvittavia-ominaisuuksia-kirjastoja/sisaeltoe-1-1.md)
+* [Komponentin metodit ja this-arvo](osa-6-react-lisaeae-komponenteista-patterneja-ja-harvemmin-tarvittavia-ominaisuuksia-kirjastoja/komponentin-metodit-ja-this-arvo.md)
+* [Utility-funktiot](osa-6-react-lisaeae-komponenteista-patterneja-ja-harvemmin-tarvittavia-ominaisuuksia-kirjastoja/utility-funktiot.md)
+* [Patterneja](osa-6-react-lisaeae-komponenteista-patterneja-ja-harvemmin-tarvittavia-ominaisuuksia-kirjastoja/patterneja/README.md)
+  * [Render props](osa-6-react-lisaeae-komponenteista-patterneja-ja-harvemmin-tarvittavia-ominaisuuksia-kirjastoja/patterneja/render-props.md)
+  * [HOC – Higher-Order Components](osa-6-react-lisaeae-komponenteista-patterneja-ja-harvemmin-tarvittavia-ominaisuuksia-kirjastoja/patterneja/hoc-higher-order-components.md)
+* [Harvemmin tarvittavia ominaisuuksia](osa-6-react-lisaeae-komponenteista-patterneja-ja-harvemmin-tarvittavia-ominaisuuksia-kirjastoja/harvemmin-tarvittavat-ominaisuudet/README.md)
+  * [Context](osa-6-react-lisaeae-komponenteista-patterneja-ja-harvemmin-tarvittavia-ominaisuuksia-kirjastoja/harvemmin-tarvittavat-ominaisuudet/context.md)
+  * [Refs](osa-6-react-lisaeae-komponenteista-patterneja-ja-harvemmin-tarvittavia-ominaisuuksia-kirjastoja/harvemmin-tarvittavat-ominaisuudet/refs.md)
+* [Kirjastoja](osa-6-react-lisaeae-komponenteista-patterneja-ja-harvemmin-tarvittavia-ominaisuuksia-kirjastoja/kirjastoja/README.md)
+  * [React Router](osa-6-react-lisaeae-komponenteista-patterneja-ja-harvemmin-tarvittavia-ominaisuuksia-kirjastoja/kirjastoja/react-router.md)
+  * [React-Bootstrap](osa-6-react-lisaeae-komponenteista-patterneja-ja-harvemmin-tarvittavia-ominaisuuksia-kirjastoja/kirjastoja/react-bootstrap.md)
+  * [React Intl](osa-6-react-lisaeae-komponenteista-patterneja-ja-harvemmin-tarvittavia-ominaisuuksia-kirjastoja/kirjastoja/react-intl.md)
+  * [react-jsonschema-form](osa-6-react-lisaeae-komponenteista-patterneja-ja-harvemmin-tarvittavia-ominaisuuksia-kirjastoja/kirjastoja/react-jsonschema-form.md)
+* [Linkkejä](osa-6-react-lisaeae-komponenteista-patterneja-ja-harvemmin-tarvittavia-ominaisuuksia-kirjastoja/linkkejae.md)
+* [Tehtävä](osa-6-react-lisaeae-komponenteista-patterneja-ja-harvemmin-tarvittavia-ominaisuuksia-kirjastoja/tehtaevae.md)
 

@@ -1,2 +1,0 @@
-# Harvemmin tarvittavat ominaisuudet
-
