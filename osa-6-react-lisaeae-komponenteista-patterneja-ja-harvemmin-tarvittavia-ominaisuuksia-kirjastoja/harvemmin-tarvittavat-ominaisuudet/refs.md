@@ -23,21 +23,23 @@ class Kauppa extends Component {
     this.hinnasto = createRef();
     this.textInput = createRef();
   }
-  tulostaHinnasto() {
+  tulostaHinnasto = () => {
     this.hinnasto.current.tulosta();
-  }
-  focusTextInput() {
+  };
+  focusTextInput = () => {
     this.textInput.current.focus();
-  }
+  };
   render() {
-    return <>
-      <Hinnasto ref={this.hinnasto} />
-      <button onClick={this.tulostaHinnasto}>Tulosta hinnasto</button>
-      <input
-        ref={this.textInput}
-        type="text"
-      />
-    </>;
+    return (
+      <>
+        <Hinnasto ref={this.hinnasto} />
+        <button onClick={this.tulostaHinnasto}>Tulosta hinnasto</button>
+        <input
+          ref={this.textInput}
+          type="text"
+        />
+      </>
+    );
   }
 }
 ```
