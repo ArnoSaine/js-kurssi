@@ -5,7 +5,7 @@
 * [Mihin kannattaa panostaa](mihin-kannattaa-panostaa.md)
 * [Mihin ei kannata panostaa](mihin-ei-kannata-panostaa.md)
 
-## Osa 1: JavaScriptin sisäänrakennetut toiminnot
+## 1. JavaScriptin sisäänrakennetut toiminnot
 
 * [Sisältö](osa-1-javascriptin-sisaeaenrakennetut-toiminnot/sisaeltoe.md)
 * [Miksi JavaScript](osa-1-javascriptin-sisaeaenrakennetut-toiminnot/miksi-javascript.md)
@@ -26,7 +26,7 @@
 * [Linkkejä](osa-1-javascriptin-sisaeaenrakennetut-toiminnot/linkkejae.md)
 * [Tehtävä](osa-1-javascriptin-sisaeaenrakennetut-toiminnot/tehtaevae.md)
 
-## Osa 2: DOM, jQuery, JSON, Fetch API
+## 2. DOM, jQuery, JSON, Fetch API
 
 * [Sisältö](osa-2-dom-jquery-json-fetch-api/sisaeltoe.md)
 * [Document Object Model](osa-2-dom-jquery-json-fetch-api/document-object-model.md)
@@ -38,7 +38,7 @@
 * [Fetch API](osa-2-dom-jquery-json-fetch-api/fetch-api.md)
 * [Tehtäviä](osa-2-dom-jquery-json-fetch-api/tehtaeviae.md)
 
-## Osa 3: Polyfill, selainyhteensopivuus, syntaksin uudet ominaisuudet, Babel
+## 3. Polyfill, selainyhteensopivuus, syntaksin uudet ominaisuudet, Babel
 
 * [Sisältö](osa-3-polyfill-selainyhteensopivuus-syntaksin-uudet-ominaisuudet-babel/sisaeltoe.md)
 * [Polyfill](osa-3-polyfill-selainyhteensopivuus-syntaksin-uudet-ominaisuudet-babel/polyfill/README.md)
@@ -59,7 +59,7 @@
   * [Valmistelut](osa-3-polyfill-selainyhteensopivuus-syntaksin-uudet-ominaisuudet-babel/tehtaevae/valmistelut.md)
   * [Tehtävä](osa-3-polyfill-selainyhteensopivuus-syntaksin-uudet-ominaisuudet-babel/tehtaevae/tehtaevae.md)
 
-## Osa 4: Modularisointi ja kirjastojen käyttö, npm, Webpack
+## 4. Modularisointi ja kirjastojen käyttö, npm, Webpack
 
 * [Sisältö](osa-4-modularisointi-ja-kirjastojen-kaeyttoe-npm-webpack/sisaeltoe.md)
 * [Kirjastot ja modularisointi](osa-4-modularisointi-ja-kirjastojen-kaeyttoe-npm-webpack/kirjastot-ja-modularisointi.md)
@@ -75,7 +75,7 @@
 * [Linkkejä](osa-4-modularisointi-ja-kirjastojen-kaeyttoe-npm-webpack/linkkejae.md)
 * [Tehtävä](osa-4-modularisointi-ja-kirjastojen-kaeyttoe-npm-webpack/tehtaevae.md)
 
-## Osa 5: React – taustaa, JSX, hyvä tietää / yleisimmät ongelmat
+## 5. React – taustaa, JSX, hyvä tietää / yleisimmät ongelmat
 
 * [Sisältö](osa-5-react-taustaa-jsx-hyvae-tietaeae-yleisimmaet-ongelmat-1/sisaeltoe-1.md)
 * [React](osa-5-react-taustaa-jsx-hyvae-tietaeae-yleisimmaet-ongelmat-1/react/README.md)
@@ -87,7 +87,7 @@
 * [Linkkejä](osa-5-react-taustaa-jsx-hyvae-tietaeae-yleisimmaet-ongelmat-1/linkkejae-1.md)
 * [Tehtävä](osa-5-react-taustaa-jsx-hyvae-tietaeae-yleisimmaet-ongelmat-1/tehtaevae-1.md)
 
-## Osa 6: React – lisää komponenteista, patterneja ja harvemmin tarvittavia ominaisuuksia, kirjastoja
+## 6. React – lisää komponenteista, patterneja ja harvemmin tarvittavia ominaisuuksia, kirjastoja
 
 * [Sisältö](osa-6-react-lisaeae-komponenteista-patterneja-ja-harvemmin-tarvittavia-ominaisuuksia-kirjastoja/sisaeltoe-1-1.md)
 * [Komponentin metodit ja this-arvo](osa-6-react-lisaeae-komponenteista-patterneja-ja-harvemmin-tarvittavia-ominaisuuksia-kirjastoja/komponentin-metodit-ja-this-arvo.md)
@@ -105,4 +105,18 @@
   * [react-jsonschema-form](osa-6-react-lisaeae-komponenteista-patterneja-ja-harvemmin-tarvittavia-ominaisuuksia-kirjastoja/kirjastoja/react-jsonschema-form.md)
 * [Linkkejä](osa-6-react-lisaeae-komponenteista-patterneja-ja-harvemmin-tarvittavia-ominaisuuksia-kirjastoja/linkkejae.md)
 * [Tehtävä](osa-6-react-lisaeae-komponenteista-patterneja-ja-harvemmin-tarvittavia-ominaisuuksia-kirjastoja/tehtaevae.md)
+
+## 7. Reaaliaikasovellukset, CouchDB
+
+* [Sisältö](osa-7-reaaliaikasovellukset-couchdb/sisaeltoe.md)
+* [Vuorovaikutteisten web-sovellusten historiaa](osa-7-reaaliaikasovellukset-couchdb/vuorovaikutteisten-web-sovellusten-historiaa/README.md)
+  * [Ennen Ajaxia](osa-7-reaaliaikasovellukset-couchdb/vuorovaikutteisten-web-sovellusten-historiaa/ennen-ajaxia.md)
+  * [Ajax](osa-7-reaaliaikasovellukset-couchdb/vuorovaikutteisten-web-sovellusten-historiaa/ajax.md)
+  * [Ajax:lla “tehostetut” perinteiset sovellukset \(1/2\)](osa-7-reaaliaikasovellukset-couchdb/vuorovaikutteisten-web-sovellusten-historiaa/ajax-lla-tehostetut-perinteiset-sovellukset-1-2.md)
+  * [Ajax:lla “tehostetut” perinteiset sovellukset \(2/2\)](osa-7-reaaliaikasovellukset-couchdb/vuorovaikutteisten-web-sovellusten-historiaa/ajax-lla-tehostetut-perinteiset-sovellukset-2-2.md)
+* [CouchDB](osa-7-reaaliaikasovellukset-couchdb/couchdb/README.md)
+  * [Esimerkkitapaus](osa-7-reaaliaikasovellukset-couchdb/couchdb/esimerkkitapaus.md)
+  * [Yhteenveto](osa-7-reaaliaikasovellukset-couchdb/couchdb/yhteenveto.md)
+* [Yksinkertainen mutta tehokas arkkitehtuuri](osa-7-reaaliaikasovellukset-couchdb/yksinkertainen-mutta-tehokas-arkkitehtuuri.md)
+* [Tehtävä](osa-7-reaaliaikasovellukset-couchdb/tehtaevae.md)
 

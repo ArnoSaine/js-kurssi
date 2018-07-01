@@ -6,7 +6,7 @@
 4. [Modularisointi ja kirjastojen käyttö, npm, Webpack   ](osa-4-modularisointi-ja-kirjastojen-kaeyttoe-npm-webpack/sisaeltoe.md)
 5. [React – taustaa, JSX, hyvä tietää / yleisimmät ongelmat   ](osa-5-react-taustaa-jsx-hyvae-tietaeae-yleisimmaet-ongelmat-1/sisaeltoe-1.md)
 6. [React – lisää komponenteista, patterneja ja harvemmin tarvittavia ominaisuuksia, kirjastoja](osa-6-react-lisaeae-komponenteista-patterneja-ja-harvemmin-tarvittavia-ominaisuuksia-kirjastoja/sisaeltoe-1-1.md)
-7. Reaaliaikasovellukset, CouchDB
+7. [Reaaliaikasovellukset, CouchDB](osa-7-reaaliaikasovellukset-couchdb/sisaeltoe.md)
 
 Arno Saine – [arno@mowhi.com](mailto:arno@mowhi.com) – 2017–2018
 

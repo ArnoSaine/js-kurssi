@@ -9,7 +9,7 @@
        * Asetukset
          * _File &gt; Settings &gt; Packages &gt; “autosave” &gt; Settings &gt;_  ☑️ _Enabled_
          * _File &gt; Settings &gt; Packages &gt; “prettier” &gt; Settings &gt;_  ☑️ _Format Files on Save_
-3. Tallenna [esimerkkiprojekti](https://github.com/ArnoSaine/js-kurssi-harjoitus-3.1) ja suorita `npm install`, **tai** tee vaiheet 4-7
+3. Tallenna [esimerkkiprojekti](https://github.com/ArnoSaine/npm-package-expert) ja suorita `npm install`, **tai** tee vaiheet 4-7
 4. Tee uusi projekti
 
    ```bash
