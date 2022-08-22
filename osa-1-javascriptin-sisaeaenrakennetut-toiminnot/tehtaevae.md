@@ -1,6 +1,6 @@
 # Tehtävä
 
-1. Avaa Babel REPL [tästä](https://babeljs.io/repl/#?babili=false&browsers=&build=&builtIns=false&code_lz=GYVwdgxgLglg9mABFATgQzAZ2HFBbACigFMAPKASkQG8AoRRexFYqEFJE8gbloF9aEBJjgAbYgDpRcAOZF0WHPgIByEplgATlRQrcgA&debug=false&forceAllTransforms=false&shippedProposals=false&circleciRepo=&evaluate=true&fileSize=false&lineWrap=true&presets=es2015%2Creact%2Cstage-2&prettier=true&targets=&version=6.26.0&envVersion=)
+1. Avaa Babel REPL [tästä](https://babeljs.io/repl/#?browsers=defaults%2C%20not%20ie%2011%2C%20not%20ie_mob%2011&build=&builtIns=false&corejs=3.6&spec=false&loose=false&code_lz=GYVwdgxgLglg9mABFATgQzAZ2HFBbACigFMAPKASkQG8AoRRFYqEFJE8gbloF9baICTFES4YAcxhg0AG0QBeRAHI0AIwgATpd0FYRqDNlx5iAEwXJ0WHPgJjJ0mRW4ChcGcQB0MuOKJWjfDNnRAB6UMQAIkxTYDRIoA&debug=false&forceAllTransforms=false&shippedProposals=false&circleciRepo=&evaluate=true&fileSize=false&timeTravel=false&sourceType=module&lineWrap=false&presets=&prettier=false&targets=&version=7.18.12&externalPlugins=&assumptions=%7B%7D)
 2. Avaa selaimen developer tools \(F12\) ja sieltä JavaScript-konsoli
 3. Muokkaa `transform`-funktiota siten, että se paluttaa tekstin, jossa `text`-parametrin kirjaimet ovat siirretty QWERTY-näppäimistössä oikealle, eli `q` → `w`, `a` → `s`, `m` → `z`, jne.
    * Käytä ratkaisussa edellä mainittuja String- ja Array-prototyyppien funktioita
