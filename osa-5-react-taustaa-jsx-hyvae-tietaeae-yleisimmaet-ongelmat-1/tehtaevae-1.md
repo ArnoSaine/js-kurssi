@@ -1,6 +1,6 @@
 # Tehtävä
 
-1. Tee [Create React App](https://github.com/facebookincubator/create-react-app) -työkalulla uusi React-projekti
+1. Tee [Create React App](https://create-react-app.dev/) -työkalulla uusi React-projekti
    * Nimi voi olla esimerkiksi “the-race-to-december-31”
 
 ### Pelin säännöt
@@ -20,24 +20,23 @@
 
 ### Toteutus
 
-1. Asenna [Airbnb React Datepicker](https://github.com/airbnb/react-dates) ja sen vaatimat muut riippuvuudet
+1. Asenna [MUI Date Picker](https://mui.com/x/react-date-pickers/date-picker/) ja sen vaatimat riippuvuudet
 
    ```bash
-   npm install --save-dev react-dates moment
+   npm install @mui/material @mui/x-date-pickers @emotion/react @emotion/styled moment
    ```
 
-2. Käytä päivämäärän valintaan `<SingleDatePicker />`:iä
-3. Aseta suomalainen päivämääräformaatti `displayFormat`-propilla
-   * Formaatti käyttää [Moment-kirjaston päivämääräformaattia](https://momentjs.com/docs/#/displaying/format/)
-4. Käytä `SingleDatePicker`:in `isDayBlocked` -callback-funktiota päivämäärien rajaukseen
+2. Käytä päivämäärän valintaan `<StaticDatePicker />`:iä (https://mui.com/x/react-date-pickers/date-picker/#static-mode)
+   * Esimerkistä poiketen käytä `LocalizationProvider`:ssa Moment-kirjaston adapteria: `import { AdapterMoment } from "@mui/x-date-pickers/AdapterMoment";`
+4. Käytä `StaticDatePicker`:in `shouldDisableDate` -callback-funktiota päivämäärien rajaukseen
    * Funktio saa parametrina [Moment-kirjaston](https://momentjs.com/docs/) päivämääräobjektin
-5. Tietokone valitsee päivämäärän oheisella funktiolla
+5. Tietokone valitsee päivämäärän oheisella funktiolla:
 
    {% code-tabs %}
    {% code-tabs-item title="src/getComputerMove.js" %}
    ```javascript
    import moment from 'moment';
-   // getComputerMove :: (Moment a) -> Moment
+   // getComputerMove = (a: Moment) => Moment
    export default function getComputerMove(a) {
      const b = a.date();
      if (31 === b) return moment({ date: 31, month: 11 });
@@ -54,6 +53,7 @@
    {% endcode-tabs-item %}
    {% endcode-tabs %}
 
-6. Listaa valitut päivämäärät
-7. Lisää “Uusi peli” -painike
+5. Listaa valitut päivämäärät
+6. Lisää “Uusi peli” -painike
+7. Aseta suomalainen päivämääräformaatti
 
