@@ -32,11 +32,12 @@
    * Funktio saa parametrina [Moment-kirjaston](https://momentjs.com/docs/) päivämääräobjektin
 5. Tietokone valitsee päivämäärän oheisella funktiolla:
 
-   {% code-tabs %}
-   {% code-tabs-item title="src/getComputerMove.js" %}
-   ```javascript
+   ```js
+   // src/getComputerMove.js
+   
    import moment from 'moment';
-   // getComputerMove = (a: Moment) => Moment
+   
+   // function getComputerMove(a: Moment): Moment
    export default function getComputerMove(a) {
      const b = a.date();
      if (31 === b) return moment({ date: 31, month: 11 });
@@ -50,8 +51,6 @@
      return moment(d === b ? { date: b, month: c + 1 } : { date: d, month: c });
    }
    ```
-   {% endcode-tabs-item %}
-   {% endcode-tabs %}
 
 5. Listaa valitut päivämäärät
 6. Lisää “Uusi peli” -painike
