@@ -26,9 +26,9 @@
    npm install @mui/material @mui/x-date-pickers @emotion/react @emotion/styled moment
    ```
 
-2. Käytä päivämäärän valintaan `<StaticDatePicker />`:iä (https://mui.com/x/react-date-pickers/date-picker/#static-mode)
+2. Käytä päivämäärän valintaan [`<StaticDatePicker />`](https://mui.com/x/react-date-pickers/date-picker/#static-mode):iä
    * Esimerkistä poiketen käytä `LocalizationProvider`:ssa Moment-kirjaston adapteria: `import { AdapterMoment } from "@mui/x-date-pickers/AdapterMoment";`
-4. Käytä `StaticDatePicker`:in `shouldDisableDate` -callback-funktiota päivämäärien rajaukseen
+4. Käytä `StaticDatePicker`:in `shouldDisableDate` -propille annettavaa callback-funktiota päivämäärien rajaukseen
    * Funktio saa parametrina [Moment-kirjaston](https://momentjs.com/docs/) päivämääräobjektin
 5. Tietokone valitsee päivämäärän oheisella funktiolla:
 
