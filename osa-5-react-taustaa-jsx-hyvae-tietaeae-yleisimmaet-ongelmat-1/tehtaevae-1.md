@@ -32,7 +32,7 @@
    * Funktio saa parametrina [Moment-kirjaston](https://momentjs.com/docs/) päivämääräobjektin
 5. Tietokone valitsee päivämäärän oheisella funktiolla:
 
-   ```js
+   ```javascript
    // src/getComputerMove.js
    
    import moment from 'moment';
