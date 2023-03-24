@@ -9,10 +9,9 @@
 
 ### Lisätehtävä
 
-1. Siirtofunktio toiseen suuntaan, jolla “salakirjoituksen” voi purkaa
-2. Yhteisen toiminnallisuuden erotus omiin funktioihin
-3. Numeroiden käsittely: `1` → `2`, `2` → `3`, …`0` → `1`
-4. Isojen kirjainten käsittely
-5. Erikoismerkkien käsittely
+1. Numeroiden käsittely: `1` → `2`, `2` → `3`, …`0` → `1`
+2. Isojen kirjainten käsittely
+3. Erikoismerkkien käsittely
    * Erikoismerkit palautetaan sellaisenaan
-
+4. Siirtofunktio toiseen suuntaan, jolla “salakirjoituksen” voi purkaa
+5. Yhteisen toiminnallisuuden erotus omiin funktioihin
